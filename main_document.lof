@@ -1,0 +1,12 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Location of the study area and monitoring wells, the brown dots indicates wells where the ground water level has an obvious trend, the green dots indicates wells with no trend.}}{21}{figure.caption.10}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Example of temporal evolution and selected explanatory variables for a representative well.}}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Temporal evolution of groundwater levels for a selection of monitoring wells. The plots highlight both declining trends in some wells and heterogeneous dynamics across the study area.}}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Graph construction using distance metric }}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {5}{\ignorespaces The STGCN architecture adapted in this study }}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Overview of model performance.}}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Metrics comparison of the two baseline models (LSTM and GRU) with the STGNN model.}}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Predictions of the three models on training and testing datasets.}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Comparison between model prediction performance and spatial error distribution.}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Model interpretability: Feature importance and confidence intervals.}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Uncertainty vs Error}}{31}{figure.caption.20}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Model Diagnostics Map: Accuracy (Color) vs. Confidence (Size) for each well.}}{32}{figure.caption.21}%

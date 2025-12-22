@@ -1,0 +1,137 @@
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs_rev1/lastones/trendwells.png}
+    \caption{Location of the study area and monitoring wells, the brown dots indicates wells where the ground water level has an obvious trend, the green dots indicates wells with no trend.}
+    \label{fig:myimage}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+\centering
+\includegraphics[width=1\textwidth]{figs_rev1/lastones/predictors.png}
+\caption{Example of temporal evolution and selected explanatory variables for a representative well.}
+\label{fig:timeseries}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+\centering
+\includegraphics[width=1\textwidth]{figs_rev1/lastones/wells_plot.png}
+\caption{Temporal evolution of groundwater levels for a selection of monitoring wells. The plots highlight both declining trends in some wells and heterogeneous dynamics across the study area.}
+\label{fig:gwl_timeseries}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs_rev1/lastones/graphmap.png} % scale with dth
+    \caption{Graph construction using distance metric }
+    \label{fig:myimage1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs_rev1/lastones/process.png} % scale with dth
+    \caption{The STGCN architecture adapted in this study }
+    \label{fig:myimage2}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+
+    % Left image
+    \begin{subfigure}[b]{0.56\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/model_training.png}
+        \caption{Training and validation loss over epochs.}
+        \label{fig:myimage3}
+    \end{subfigure}
+    \hfill
+    % Right image
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/model_metrics.png}
+        \caption{Evaluation metrics on the test set.}
+        \label{fig:myimage4}
+    \end{subfigure}
+
+    \caption{Overview of model performance.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs_rev1/lastones/metrics_comparison.png}
+    \caption{Metrics comparison of the two baseline models (LSTM and GRU) with the STGNN model.}
+    \label{fig:metrics_comparison}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs_rev1/lastones/predictions_comparison.png}
+    \caption{Predictions of the three models on training and testing datasets.}
+    \label{fig:time_series}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=h!]
+    \centering
+    % --- Left image: Scatter ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/density_obs_vs_pred.png}
+        \caption{Observed vs predicted groundwater levels}
+        \label{fig:obs_vs_pred}
+    \end{subfigure}
+    \hfill
+    % --- Right image: Residuals ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/residuals_distribution.png}
+        \caption{STGNN: Distribution of Residuals.}
+        \label{fig:residuals_dist}
+    \end{subfigure}
+    \caption{Comparison between model prediction performance and spatial error distribution.}
+    \label{fig:scatter_hist}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    % --- Left image ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/feature_importance.png}
+        \caption{Global feature importance}
+        \label{fig:feat_imp}
+    \end{subfigure}
+    \hfill
+    % --- Right image ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figs_rev1/lastones/uncertainty_well.png}
+        \caption{Model confidence interval (Well 766/53)}
+        \label{fig:conf_int}
+    \end{subfigure}
+    \caption{Model interpretability: Feature importance and confidence intervals.}
+    \label{fig:feature_importance}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figs_rev1/lastones/uncertainty_vs_error.png}
+    \caption{Uncertainty vs Error}
+    \label{fig:uncertainty_scatter}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=H]
+    \centering
+    \includegraphics[width=1\textwidth]{figs_rev1/lastones/combined_diagnostics_map_styled_fixed}
+    \caption{Model Diagnostics Map: Accuracy (Color) vs. Confidence (Size) for each well.}
+    \label{fig:spatial_map}
+\end{figure}
