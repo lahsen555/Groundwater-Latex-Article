@@ -48,7 +48,6 @@
 \usepackage{amsmath, amssymb}
 
 
-
 \newcommand{\colorComments}{black} 
  
 %%%Author definitions
@@ -77,13 +76,13 @@ Study of the Haouz Aquifer, Morocco }
 
 
 \author[1]{Author 1}[type=editor, auid=000,bioid=1,orcid=0009-0007-8193-5359]
-\credit{ Author 1 contribution  }
+\credit{contribution }
 
 \author[2]{Author 2} 
-\credit{Author 2 contribution }
+\credit{contribution }
 
 \author[3]{Author 3}
-\credit{Author 3 contribution}
+\credit{contribution}
 
 \begin{abstract}
 Groundwater plays a critical role in sustaining ecosystems, agriculture, and human water demand. Accurate forecasting of groundwater levels is essential for sustainable water resource management, particularly in regions experiencing climate change and increasing demand. Traditional time-series and statistical models often struggle to capture the nonlinear dependencies and spatial interactions inherent in groundwater systems. This paper explores the application of Spatio-Temporal Graph Neural Networks (STGNNs) for groundwater level forecasting. By modeling monitoring wells as nodes and hydrological, geological, and climatic relationships as graph edges, STGNNs effectively capture both spatial dependencies and temporal dynamics. The findings highlight the potential of graph-based deep learning methods as a valuable tool for groundwater monitoring and management.\\
@@ -105,31 +104,31 @@ Graph convolutional network \sep Long short-term memory \sep Groundwater forecas
 \section{Introduction}
 \label{intro}
 
-Groundwater is an indispensable natural resource that sustains ecosystems, supports intensive agriculture, and fulfills domestic and industrial demands worldwide. As one of the primary freshwater reservoirs, it plays a critical role in mitigating the impacts of droughts and maintaining water security, particularly in semi-arid and arid regions where surface water availability is increasingly erratic \cite{scanlonGlobalWaterResources2023}. However, mounting anthropogenic pressures and the accelerating effects of climate change manifested through irregular precipitation patterns, rising temperatures, and land-use transformations pose unprecedented challenges to groundwater sustainability \cite{taylor2013, famiglietti2014groundwater}. Over-extraction for irrigation and inadequate recharge have contributed to alarming declines in groundwater levels (GWLs) across many major aquifers, leading to long-term ecological degradation and severe socio-economic consequences \cite{wada2010global, mukherjee2024}.
+Groundwater is an indispensable natural resource that sustains ecosystems, supports intensive agriculture, and fulfills domestic and industrial demands worldwide. As one of the primary freshwater reservoirs, it plays a critical role in mitigating the impacts of droughts and maintaining water security, particularly in semi-arid and arid regions where surface water availability is increasingly erratic \cite{scanlon_global_2023}. However, mounting anthropogenic pressures and the accelerating effects of climate change manifested through irregular precipitation patterns, rising temperatures, and land-use transformations pose unprecedented challenges to groundwater sustainability \cite{taylor_ground_2013, famiglietti_global_2014}. Over-extraction for irrigation and inadequate recharge have contributed to alarming declines in groundwater levels (GWLs) across many major aquifers, leading to long-term ecological degradation and severe socio-economic consequences \cite{wada_global_2010, mukherjee_arsenic_2024}.
 
 \subsection{Challenges in Groundwater Modeling}
 
-In this context of scarcity and stress, accurate and timely forecasting of GWLs is a prerequisite for sustainable water resource management, efficient irrigation planning, and drought mitigation \cite{sun2022}. Yet, modeling groundwater dynamics remains a formidable challenge due to the nonlinear interactions between meteorological drivers, hydrological processes, geological heterogeneity, and anthropogenic interventions such as pumping \cite{sophocleous2002groundwater}.
+In this context of scarcity and stress, accurate and timely forecasting of GWLs is a prerequisite for sustainable water resource management, efficient irrigation planning, and drought mitigation \cite{sun_data-driven_2022}. Yet, modeling groundwater dynamics remains a formidable challenge due to the nonlinear interactions between meteorological drivers, hydrological processes, geological heterogeneity, and anthropogenic interventions such as pumping \cite{sophocleous_interactions_2002}.
 
-Historically, hydrogeologists have relied on physically-based models (e.g., MODFLOW). While these models are grounded in physical laws and provide robust understanding of flow dynamics \cite{anderson2015}, they require extensive site-specific hydrogeological data—often unavailable in data-scarce regions—and involve computationally intensive parameterization and calibration processes \cite{refsgaard1997parameterization}. Alternatively, geostatistical approaches, while valuable for spatial interpolation, typically assume stationarity and linear relationships, limiting their capacity to extrapolate under the non-stationary conditions induced by climate change.
+Historically, hydrogeologists have relied on physically-based models (e.g., MODFLOW). While these models are grounded in physical laws and provide robust understanding of flow dynamics \cite{anderson_applied_2015}, they require extensive site-specific hydrogeological data—often unavailable in data-scarce regions—and involve computationally intensive parameterization and calibration processes \cite{refsgaard_parameterisation_1997}. Alternatively, geostatistical approaches, while valuable for spatial interpolation, typically assume stationarity and linear relationships, limiting their capacity to extrapolate under the non-stationary conditions induced by climate change.
 
 \subsection{The Evolution from Temporal ML to Spatio-Temporal Deep Learning}
 
-To overcome the limitations of physical and statistical models, data-driven Machine Learning (ML) and Deep Learning (DL) approaches have gained prominence in recent decades. Early applications utilizing Artificial Neural Networks (ANNs), Support Vector Machines (SVMs), and Random Forests (RF) demonstrated superior performance in capturing nonlinear relationships compared to traditional multiple linear regression \cite{nayak2006groundwater, sahooGroundwaterlevelPredictionUsing2013}. More recently, Recurrent Neural Networks (RNNs), and specifically Long Short-Term Memory (LSTM) networks, have become the state of the art for hydrological time series forecasting due to their ability to learn long term temporal dependencies \cite{gharehbaghi2022}.
+To overcome the limitations of physical and statistical models, data-driven Machine Learning (ML) and Deep Learning (DL) approaches have gained prominence in recent decades. Early applications utilizing Artificial Neural Networks (ANNs), Support Vector Machines (SVMs), and Random Forests (RF) demonstrated superior performance in capturing nonlinear relationships compared to traditional multiple linear regression \cite{nayak_groundwater_2006, sahoo_groundwater-level_2013}. More recently, Recurrent Neural Networks (RNNs), and specifically Long Short-Term Memory (LSTM) networks, have become the state of the art for hydrological time series forecasting due to their ability to learn long term temporal dependencies \cite{lin_time_2022}.
 
-However, a critical methodological gap persists: standard deep learning models like LSTM typically treat monitoring wells as isolated entities. Ther rely exclusively on temporal sequences, ignoring the \textit{spatial dependencies} inherent in an aquifer system \cite{liGraphNeuralNetwork2023}. Groundwater levels in a monitoring network are not independent; they are physically interconnected through hydraulic gradients, where fluctuations in one well are influenced by pumping, recharge, and geological conditions at neighboring locations \cite{changAdvancedGroundwaterLevel2025}. Neglecting this spatial interconnectivity limits the predictive accuracy and physical interpretability of forecasting models, particularly in complex, over-exploited aquifers.
+However, a critical methodological gap persists: standard deep learning models like LSTM typically treat monitoring wells as isolated entities. They rely exclusively on temporal sequences, ignoring the \textit{spatial dependencies} inherent in an aquifer system \cite{li_graph_2023}. Groundwater levels in a monitoring network are not independent; they are physically interconnected through hydraulic gradients, where fluctuations in one well are influenced by pumping, recharge, and geological conditions at neighboring locations \cite{chang_advanced_2025}. Neglecting this spatial interconnectivity limits the predictive accuracy and physical interpretability of forecasting models, particularly in complex, over-exploited aquifers.
 
 \subsection{The Emergence of Spatio-Temporal Graph Neural Networks (STGNNs)}
 
-To address the dual challenge of spatial complexity and temporal dynamism, Graph Neural Networks (GNNs) have emerged as a transformative framework. By representing monitoring wells as nodes and their hydrogeological relationships as edges in a graph structure, GNNs explicitly encode spatial dependencies \cite{scarselli2008, kipf2017gcn}. Recent advancements have extended this paradigm to Spatio-Temporal Graph Neural Networks (STGNNs), which integrate graph convolutions (to capture spatial features) with sequence learning modules (to capture temporal dynamics) \cite{yuSpatioTemporalGraphConvolutional2018, sahiliSpatioTemporalGraphNeural2023}.
+To address the dual challenge of spatial complexity and temporal dynamism, Graph Neural Networks (GNNs) have emerged as a transformative framework. By representing monitoring wells as nodes and their hydrogeological relationships as edges in a graph structure, GNNs explicitly encode spatial dependencies \cite{scarselli_graph_2009, kipf_semi-supervised_2017}. Recent advancements have extended this paradigm to Spatio-Temporal Graph Neural Networks (STGNNs), which integrate graph convolutions (to capture spatial features) with sequence learning modules (to capture temporal dynamics) \cite{yu_spatio-temporal_2018, sahili_spatio-temporal_2023}.
 
-The application of STGNNs to groundwater forecasting represents the cutting edge of hydro-informatics. Recent studies have demonstrated that these architectures significantly outperform traditional ML and temporal-only DL models. For instance, Bai and Tahmasebi \cite{baiGraphNeuralNetwork2023} utilized a GNN with a self-adaptive adjacency matrix to forecast GWLs, proving the model could learn spatial dependencies even when physical connectivity data was incomplete. Similarly, Taccari et al. \cite{taccariSpatialtemporalGraphNeural2024} applied STGNNs to the Overbetuwe area in the Netherlands, effectively integrating auxiliary variables like precipitation and evaporation to handle missing data robustly. Furthermore, Liang et al. \cite{liangGraphNeuralNetwork2025} proposed a GCN-LSTM framework to serve as a computationally efficient surrogate for numerical models in Quebec, highlighting the scalability of the approach. Recent work by Wu et al. \cite{wuForecastingGroundwaterLevel2025} further characterized multiple spatial dependencies such as hydraulic gradients and sub-basin delineations demonstrating that capturing these complex interactions is vital for regional forecasting.
+The application of STGNNs to groundwater forecasting represents the cutting edge of hydro-informatics. Recent studies have demonstrated that these architectures significantly outperform traditional ML and temporal-only DL models. For instance, Bai and Tahmasebi \cite{bai_graph_2023} utilized a GNN with a self-adaptive adjacency matrix to forecast GWLs, proving the model could learn spatial dependencies even when physical connectivity data was incomplete. Similarly, Taccari et al. \cite{taccari_spatial-temporal_2024} applied STGNNs to the Overbetuwe area in the Netherlands, effectively integrating auxiliary variables like precipitation and evaporation to handle missing data robustly. Furthermore, Liang et al. \cite{liang_graph_2025} proposed a GCN-LSTM framework to serve as a computationally efficient surrogate for numerical models in Quebec, highlighting the scalability of the approach. Recent work by Wu et al. \cite{wu_forecasting_2025} further characterized multiple spatial dependencies such as hydraulic gradients and sub-basin delineations demonstrating that capturing these complex interactions is vital for regional forecasting.
 
 \subsection{Contextualizing the Study: The Haouz Region, Morocco}
 
-Despite these global advancements, the application of STGNNs in the specific context of North African semi-arid aquifers remains unexplored. The Haouz region in Morocco exemplifies the "data-scarce" and "high-stress" environments where such advanced modeling is most needed \cite{borziModelingGroundwaterResources2025}. Similar to the situation in the Rabat-Salé-Kénitra region \cite{elmotawakkilAdvancedMachineLearning2024}, the Haouz aquifer faces severe depletion due to intensive irrigation and recurrent drought. While recent local studies have employed dimensionality reduction and neural networks to analyze these trends \cite{bouramtaneDimensionalityReductionGroundwater2025}, they have largely relied on temporal correlations, leaving the spatial network dynamics unmodeled.
+Despite these global advancements, the application of STGNNs in the specific context of North African semi-arid aquifers remains unexplored. The Haouz region in Morocco exemplifies the "data-scarce" and "high-stress" environments where such advanced modeling is most needed \cite{borzi_modeling_2025}. Similar to the situation in the Rabat-Salé-Kénitra region \cite{elmotawakkil_advanced_2024}, the Haouz aquifer faces severe depletion due to intensive irrigation and recurrent drought. While recent local studies have employed dimensionality reduction and neural networks to analyze these trends \cite{bouramtane_dimensionality_2025}, they have largely relied on temporal correlations, leaving the spatial network dynamics unmodeled.
 
-The complex subsurface geometries and hydrogeological challenges observed in regions such as the Al Haouz Mejjate basin characterized by intensive groundwater abstraction and limited natural recharge require advanced modeling approaches to reliably estimate aquifer substrate topography and predict groundwater dynamics \cite{elmezouaryContributionAdvancingAquifer2024a}. Recent studies have demonstrated that nonlinear machine learning techniques, including Gaussian Process Regression and deep neural network architectures, can effectively infer substrate depths by integrating sparse borehole information with regional geospatial datasets, achieving coefficient of determination ($R^{2}$) values exceeding 0.8 when validated against independent borehole measurements \cite{elmezouaryContributionAdvancingAquifer2024a}. These findings highlight the growing potential of data-driven computational frameworks for characterizing key hydraulic parameters of groundwater reservoirs, parameters that are traditionally costly, time-consuming, and often uncertain when estimated solely through field-based investigations.
+The complex subsurface geometries and hydrogeological challenges observed in regions such as the Al Haouz Mejjate basin characterized by intensive groundwater abstraction and limited natural recharge require advanced modeling approaches to reliably estimate aquifer substrate topography and predict groundwater dynamics \cite{el_mezouary_contribution_2024}. Recent studies have demonstrated that nonlinear machine learning techniques, including Gaussian Process Regression and deep neural network architectures, can effectively infer substrate depths by integrating sparse borehole information with regional geospatial datasets, achieving coefficient of determination ($R^{2}$) values exceeding 0.8 when validated against independent borehole measurements \cite{el_mezouary_contribution_2024}. These findings highlight the growing potential of data-driven computational frameworks for characterizing key hydraulic parameters of groundwater reservoirs, parameters that are traditionally costly, time-consuming, and often uncertain when estimated solely through field-based investigations.
 
 
 \subsection{Research Objectives and Contribution}
@@ -138,10 +137,10 @@ This study aims to bridge this research gap by introducing a Spatio-Temporal Gra
 
 The main contributions of this study are as follows:
 \begin{enumerate}
-    \item \textbf{Methodological Innovation:} We develop a unified STGNN forecasting framework that integrates hydrological and climatic dependencies, addressing the limitations of standard LSTM models in capturing spatial correlations \cite{wangGroundwaterLevelSpatiotemporal2024, chenEnhancingAccuracyGroundwater2025}.
-    \item \textbf{Regional Application:} We provide the first application of STGCN for GWL forecasting in the Haouz region, offering a high-accuracy tool for managing groundwater resources under conditions of data scarcity and climate stress \cite{talibSpatialTemporalForecasting2024}.
+    \item \textbf{Methodological Innovation:} We develop a unified STGNN forecasting framework that integrates hydrological and climatic dependencies, addressing the limitations of standard LSTM models in capturing spatial correlations \cite{wang_groundwater_2024, chen_enhancing_2025}.
+    \item \textbf{Regional Application:} We provide the first application of STGCN for GWL forecasting in the Haouz region, offering a high-accuracy tool for managing groundwater resources under conditions of data scarcity and climate stress \cite{talib_spatial_2024}.
     \item \textbf{Benchmarking and Validation:} We comprehensively benchmark the proposed approach against traditional deep learning (LSTM, GRU) baselines, demonstrating superior predictive performance and stability.
-    \item \textbf{Decision Support:} We highlight the potential of the graph-based approach to serve as a decision-support tool, facilitating interpretable and scalable management strategies for the Haouz basin \cite{mahammadGroundwaterLevelDynamics2023}.
+    \item \textbf{Decision Support:} We highlight the potential of the graph-based approach to serve as a decision-support tool, facilitating interpretable and scalable management strategies for the Haouz basin \cite{mahammad_groundwater_2023}.
 \end{enumerate}
 
 
@@ -150,7 +149,7 @@ The main contributions of this study are as follows:
 \subsection{Data Collection}
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=1\textwidth]{figs_rev1/lastones/trendwells.png}
+    \includegraphics[width=1\textwidth]{figs_rev1/Figure_1.png}
     \caption{Location of the study area and monitoring wells, the brown dots indicates wells where the ground water level has an obvious trend, the green dots indicates wells with no trend.}
     \label{fig:myimage}
 \end{figure}
@@ -176,8 +175,8 @@ To illustrate the temporal variability of the datasets, exploratory plots were g
 
 \begin{figure}[pos=H]
 \centering
-\includegraphics[width=1\textwidth]{figs_rev1/lastones/predictors.png}
-\caption{Example of temporal evolution and selected explanatory variables for a representative well.}
+\includegraphics[width=1\textwidth]{figs_rev1/Figure_2.png}
+\caption{Example of temporal evolution of a selected explanatory variables for a representative well.}
 \label{fig:timeseries}
 \end{figure}
 
@@ -187,8 +186,8 @@ The variability observed between wells highlights the combined influence of mult
 
 \begin{figure}[pos=H]
 \centering
-\includegraphics[width=1\textwidth]{figs_rev1/lastones/wells_plot.png}
-\caption{Temporal evolution of groundwater levels for a selection of monitoring wells. The plots highlight both declining trends in some wells and heterogeneous dynamics across the study area.}
+\includegraphics[width=1\textwidth]{figs_rev1/Figure_3.png}
+\caption{Temporal evolution of groundwater levels for a all the wells used in the dataset. The plots highlight both declining trends in some wells and heterogeneous dynamics across the study area.}
 \label{fig:gwl_timeseries}
 \end{figure}
 
@@ -201,29 +200,48 @@ The raw groundwater level measurements were often collected at irregular interva
 \subsubsection*{Feature Selection}
 Initially, a broad set of potential explanatory variables was considered. To mitigate the risk of overfitting and ensure model parsimony, a correlation-based feature selection procedure was implemented. We calculated the Pearson correlation coefficient between each candidate predictor (e.g., various temperature indices, raw precipitation, vegetation metrics) and the target groundwater levels. Variables exhibiting weak correlations ($|r| < 0.1$) or high multicollinearity (redundant features) were excluded from the final input set. This process ensured that only the most relevant drivers—specifically Precipitation, Adjusted ET, LST, and NDVI—were retained for model training.
 
-\subsubsection*{Variable Transformation}
-All predictor variables were resampled to a monthly scale and temporally aligned with the groundwater level records. In addition to standard scaling, transformations were applied to certain explanatory variables to enhance their physical representativeness. For example, the evapotranspiration (ET) data obtained from the FAO WaPOR database represent total actual ET. To better capture the processes most directly linked to groundwater abstraction, the ET variable was adjusted by removing the fraction attributable to precipitation-driven transpiration. This correction was implemented using the Budyko model, which estimates the partitioning of precipitation and potential evapotranspiration as a function of temperature. While this approach is a simplification, it provides a more targeted indicator of groundwater-dependent evapotranspiration near the monitored wells.
+\subsubsection*{Variable Transformation and Evapotranspiration Partitioning}
 
-The Budyko framework \cite{budyko1974climate} was used to estimate the fraction of evapotranspiration attributable to precipitation. In its simplest form, the Budyko model relates long-term water balance to the ratio of potential evapotranspiration (PET) to precipitation ($P$). The general expression is:
+All predictor variables were resampled to a monthly temporal resolution and temporally aligned with the groundwater level observations to ensure consistency between remotely sensed data and in situ measurements. Standard scaling was applied where appropriate prior to model training.
 
-\[
-\frac{ET}{P} = \phi \left(\frac{PET}{P}\right),
-\]
+Evapotranspiration (ET) data were obtained from the FAO WaPOR database and represent total actual evapotranspiration, including both precipitation-driven and groundwater-supported components. To derive a variable more directly linked to groundwater availability, the precipitation-driven component of evapotranspiration was estimated and removed.
 
-where $\phi$ is a functional relationship often approximated using temperature-based estimates of PET. In this study, this formulation was applied to partition total evapotranspiration and subtract the precipitation-driven component, thereby obtaining an ET variable more directly linked to groundwater consumption.
+Monthly potential evapotranspiration (PET) was computed using the Hargreaves--Samani method \cite{george_h_hargreaves_reference_1985}, a temperature- and radiation-based formulation suitable for data-scarce regions. Daily minimum and maximum air temperatures were approximated from land surface temperature (LST) by applying a $\pm 5\,^{\circ}\mathrm{C}$ offset. Daily PET was estimated as:
+
+\begin{equation}
+\mathrm{PET}_{d} = 0.0023 \, R_a \, (T_{\mathrm{mean}} + 17.8)\sqrt{T_{\max} - T_{\min}},
+\end{equation}
+
+where $T_{\mathrm{mean}}$ is the mean daily air temperature, $T_{\max}$ and $T_{\min}$ are the daily maximum and minimum temperatures, respectively, and $R_a$ is the extraterrestrial radiation (MJ\,m$^{-2}$\,day$^{-1}$), computed as a function of latitude and day of year following standard formulations. Daily PET estimates were aggregated to monthly totals.
+
+The precipitation-driven component of evapotranspiration was estimated using a parametric Budyko framework \cite{budyko_climate_1974} based on the Fu formulation \cite{li_modified_2022}, which relates evapotranspiration to the ratio between potential evapotranspiration and precipitation. The Budyko relationship is expressed as:
+
+\begin{equation}
+\frac{ET_{\mathrm{rain}}}{P} = 1 + \frac{PET}{P} - \left(1 + \left(\frac{PET}{P}\right)^{\omega}\right)^{1/\omega},
+\end{equation}
+
+where $P$ denotes monthly precipitation, $PET$ is monthly potential evapotranspiration, and $\omega$ is a dimensionless shape parameter controlling the partitioning behavior. A value of $\omega = 2.6$ was adopted to represent typical semi-arid climatic conditions. The resulting $ET_{\mathrm{rain}}$ represents precipitation-driven (rainfed) evapotranspiration.
+
+Groundwater-dependent evapotranspiration was then estimated as the residual between total actual evapotranspiration and the precipitation-driven component:
+
+\begin{equation}
+ET_{\mathrm{gw}} = ET_{\mathrm{total}} - ET_{\mathrm{rain}}.
+\end{equation}
+
+To avoid non-physical estimates, negative values of $ET_{\mathrm{gw}}$ were constrained to zero. While this approach represents a simplified treatment of land--atmosphere and subsurface interactions, it provides a physically motivated proxy for groundwater-related evapotranspiration dynamics in the vicinity of the monitored wells.
+
 
 \subsection{Graph Construction}
-The groundwater monitoring network was modeled as a graph, where nodes represent wells and edges represent relationships between them, following approaches commonly used in recent spatio-temporal graph neural network (STGNN) frameworks for groundwater prediction \cite{taccari2024stgnn_groundwater}. Several strategies can be adopted to define edges in such a graph. A straightforward approach is to use spatial proximity, under the assumption that wells located near each other are likely to share similar hydrogeological conditions; distance-based adjacency using Haversine distances and $k$-nearest neighbors ($k$-NN) is widely adopted in GNN-based groundwater studies \cite{bai2023_gnn_groundwater}. In this study, pairwise distances between wells were calculated using the Haversine formula, and edges were assigned following a $k$-NN strategy. This ensures that each well is connected to its closest neighbors, capturing local spatial dependencies; similar graph construction strategies are standard in machine learning and spatial modeling \cite{chen2008_faster_knn_graph}.
+The groundwater monitoring network was modeled as a graph, where nodes represent wells and edges represent relationships between them, following approaches commonly used in recent spatio-temporal graph neural network (STGNN) frameworks for groundwater prediction \cite{taccari_spatial-temporal_2024}. Several strategies can be adopted to define edges in such a graph. A straightforward approach is to use spatial proximity, under the assumption that wells located near each other are likely to share similar hydrogeological conditions; distance-based adjacency using Haversine distances and $k$-nearest neighbors ($k$-NN) is widely adopted in GNN-based groundwater studies \cite{bai_graph_2023}. In this study, pairwise distances between wells were calculated using the Haversine formula, and edges were assigned following a $k$-NN strategy. This ensures that each well is connected to its closest neighbors, capturing local spatial dependencies; similar graph construction strategies are standard in machine learning and spatial modeling \cite{chen_fast_2009}.
 
-Alternative definitions of connectivity are also possible. Hydrogeological similarity can be used when detailed subsurface data (e.g., aquifer structure or soil properties) are available, and multi-form spatial dependency models combining distance, hydrogeologic attributes, and functional similarity have been proposed \cite{wu2025_forecasting_multiple_spatial_dependencies}. Another option is correlation-based connectivity, where wells exhibiting similar groundwater dynamics are connected regardless of spatial distance; such functional graphs have been applied in data-driven hydrogeological studies \cite{wu2025_forecasting_multiple_spatial_dependencies}. While these approaches may capture teleconnection patterns more directly, they can also introduce spurious or non-physical dependencies and risk temporal data leakage if not restricted to the training window 'CITE'.
+Alternative definitions of connectivity are also possible. Hydrogeological similarity can be used when detailed subsurface data (e.g., aquifer structure or soil properties) are available, and multi-form spatial dependency models combining distance, hydrogeologic attributes, and functional similarity have been proposed \cite{wu_forecasting_2025}. Another option is correlation-based connectivity, where wells exhibiting similar groundwater dynamics are connected regardless of spatial distance; such functional graphs have been applied in data-driven hydrogeological studies \cite{wu_forecasting_2025}. While these approaches may capture teleconnection patterns more directly, they can also introduce spurious or non-physical dependencies and risk temporal data leakage if not restricted to the training window 'CITE'.
 
-For the purposes of this study, a distance-based adjacency was adopted as a robust and physically interpretable baseline. This choice balances simplicity, hydrogeologic plausibility, and reproducibility in the absence of detailed subsurface information, and aligns with existing STGNN groundwater forecasting literature \cite{taccari2024stgnn_groundwater,bai2023_gnn_groundwater}.
-
+For the purposes of this study, a distance-based adjacency was adopted as a robust and physically interpretable baseline. This choice balances simplicity, hydrogeologic plausibility, and reproducibility in the absence of detailed subsurface information, and aligns with existing STGNN groundwater forecasting literature \cite{taccari_spatial-temporal_2024,bai_graph_2023}.
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=1\textwidth]{figs_rev1/lastones/graphmap.png} % scale with dth
-    \caption{Graph construction using distance metric }
+    \includegraphics[width=1\textwidth]{figs_rev1/Figure_4.png} % scale with dth
+    \caption{Graph representation of the groundwater monitoring network. Nodes correspond to wells, and edges are defined based on spatial proximity using a $k$-nearest neighbors ($k$-NN) approach with pairwise Haversine distances. This distance-based adjacency captures local spatial dependencies among wells while providing a physically interpretable and reproducible baseline for spatio-temporal graph neural network modeling.}
     \label{fig:myimage1}
 \end{figure}
 
@@ -231,27 +249,27 @@ For the purposes of this study, a distance-based adjacency was adopted as a robu
 \subsection{Model Architecture}
 \subsubsection{Graph Neural Networks (GNNs)}
 
-Graph Neural Networks (GNNs) extend deep learning methods to graph-structured data, where the relationships between nodes are as important as the attributes of the nodes themselves. The core principle of GNNs is \textit{message passing}, formalized in early works on neural networks for graphs and later generalized in the Message Passing Neural Network (MPNN) framework \cite{kipf2017gcn, gilmer2017mpnn}. At each layer, every node aggregates features from its neighbors and updates its own representation.
+Graph Neural Networks (GNNs) extend deep learning methods to graph-structured data, where the relationships between nodes are as important as the attributes of the nodes themselves. The core principle of GNNs is \textit{message passing}, formalized in early works on neural networks for graphs and later generalized in the Message Passing Neural Network (MPNN) framework \cite{kipf_semi-supervised_2017, gilmer_neural_2017}. At each layer, every node aggregates features from its neighbors and updates its own representation.
 
 Formally, let a graph be defined as $G = (V, E)$, where $V$ is the set of nodes (wells) and $E$ the set of edges. For a node $v \in V$, the update rule in a generic GNN layer can be written as:
 \begin{equation} 
 \label{eqn:gnn_update}
     h_v^{(l+1)} = \sigma \Big( W^{(l)} \cdot \text{AGG} \big( \{ h_u^{(l)} : u \in \mathcal{N}(v) \} \cup \{ h_v^{(l)} \} \big) \Big),
 \end{equation}
-where $h_v^{(l)}$ is the representation of node $v$ at layer $l$, $\mathcal{N}(v)$ denotes the neighborhood of $v$, $W^{(l)}$ is a learnable weight matrix, and $\sigma$ is a non-linear activation. The function \text{AGG} is a permutation-invariant aggregator (mean, sum, or max), as established in the MPNN formulation \cite{gilmer2017mpnn}.
+where $h_v^{(l)}$ is the representation of node $v$ at layer $l$, $\mathcal{N}(v)$ denotes the neighborhood of $v$, $W^{(l)}$ is a learnable weight matrix, and $\sigma$ is a non-linear activation. The function \text{AGG} is a permutation-invariant aggregator (mean, sum, or max), as established in the MPNN formulation \cite{gilmer_neural_2017}.
 
 \subsubsection{Graph Convolutional Networks (GCNs)}
 
-The Graph Convolutional Network (GCN) is a specific type of GNN that simplifies the message passing scheme using a normalized adjacency matrix. The spectral GCN formulation used in most applications was popularized by Kipf and Welling \cite{kipf2017gcn}. Given feature matrix $X \in \mathbb{R}^{N \times d}$ and adjacency matrix $A \in \mathbb{R}^{N \times N}$, the forward propagation of a GCN layer is:
+The Graph Convolutional Network (GCN) is a specific type of GNN that simplifies the message passing scheme using a normalized adjacency matrix. The spectral GCN formulation used in most applications was popularized by Kipf and Welling \cite{kipf_semi-supervised_2017}. Given feature matrix $X \in \mathbb{R}^{N \times d}$ and adjacency matrix $A \in \mathbb{R}^{N \times N}$, the forward propagation of a GCN layer is:
 \begin{equation} 
 \label{eqn:gcn_propagation}
     H^{(l+1)} = \sigma \big( \tilde{D}^{-\frac{1}{2}} \tilde{A} \tilde{D}^{-\frac{1}{2}} H^{(l)} W^{(l)} \big),
 \end{equation}
-where $\tilde{A} = A + I$ is the adjacency matrix with self-loops, $\tilde{D}$ is the diagonal degree matrix of $\tilde{A}$, $H^{(0)} = X$ is the input feature matrix, $W^{(l)}$ are learnable weights, and $\sigma$ is a non-linear activation. This formulation ensures that each node updates its representation as a weighted average of its neighbors' features, normalized to avoid scale issues \cite{kipf2017gcn}.
+where $\tilde{A} = A + I$ is the adjacency matrix with self-loops, $\tilde{D}$ is the diagonal degree matrix of $\tilde{A}$, $H^{(0)} = X$ is the input feature matrix, $W^{(l)}$ are learnable weights, and $\sigma$ is a non-linear activation. This formulation ensures that each node updates its representation as a weighted average of its neighbors' features, normalized to avoid scale issues \cite{kipf_semi-supervised_2017}.
 
 \subsubsection{Spatio-Temporal Graph Convolutional Networks (STGCNs)}
 
-Groundwater levels exhibit both temporal dependencies (fluctuations over time) and spatial dependencies (interactions among wells influenced by hydrogeological conditions). The STGCN integrates temporal and spatial modules into a unified framework, introduced originally for traffic forecasting by \cite{yu2018stgcn} and later applied to environmental and hydrological systems \cite{taccari2024stgnn_groundwater}.
+Groundwater levels exhibit both temporal dependencies (fluctuations over time) and spatial dependencies (interactions among wells influenced by hydrogeological conditions). The STGCN integrates temporal and spatial modules into a unified framework, introduced originally for traffic forecasting by \cite{yu_spatio-temporal_2018} and later applied to environmental and hydrological systems \cite{taccari_spatial-temporal_2024}.
 
 Each \textbf{spatio-temporal block consists of}:
 
@@ -260,23 +278,23 @@ Each \textbf{spatio-temporal block consists of}:
 \label{eqn:temporal_conv}
     Z = \text{Conv1D}_{\text{time}}(X),
 \end{equation}
-as proposed in temporal convolutional architectures such as STGCN \cite{yu2018stgcn}.
+as proposed in temporal convolutional architectures such as STGCN \cite{yu_spatio-temporal_2018}.
 
 2. \textbf{Graph convolution:} At each time step, spatial dependencies are captured using the GCN operation:
 \begin{equation} 
 \label{eqn:stgcn_spatial}
     H_t^{(l+1)} = \sigma \big( \tilde{D}^{-\frac{1}{2}} \tilde{A} \tilde{D}^{-\frac{1}{2}} H_t^{(l)} W^{(l)} \big), \quad \forall t \in [1, T],
 \end{equation}
-which follows the spectral GCN formulation \cite{kipf2017gcn}.
+which follows the spectral GCN formulation \cite{kipf_semi-supervised_2017}.
 
-3. \textbf{Residual connections and normalization:} These stabilize learning and allow deeper stacking, as adopted in STGCN and related spatio-temporal architectures \cite{yu2018stgcn}.
+3. \textbf{Residual connections and normalization:} These stabilize learning and allow deeper stacking, as adopted in STGCN and related spatio-temporal architectures \cite{yu_spatio-temporal_2018}.
 
-Stacking multiple spatio-temporal blocks results in a deep encoder-like structure, followed by fully connected layers to predict future groundwater levels, consistent with recent applications in hydrology \cite{taccari2024stgnn_groundwater}.
+Stacking multiple spatio-temporal blocks results in a deep encoder-like structure, followed by fully connected layers to predict future groundwater levels, consistent with recent applications in hydrology \cite{taccari_spatial-temporal_2024}.
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=1\textwidth]{figs_rev1/lastones/process.png} % scale with dth
-    \caption{The STGCN architecture adapted in this study }
+    \includegraphics[width=1\textwidth]{figs_rev1/Figure_5.png} % scale with dth
+    \caption{Architecture of the Spatio-Temporal Graph Convolutional Network (STGNN) used in this study. The model stacks multiple spatio-temporal blocks to capture spatial and temporal dependencies in groundwater data, followed by fully connected layers for forecasting future groundwater levels, consistent with recent hydrological applications \cite{taccari_spatial-temporal_2024}.}
     \label{fig:myimage2}
 \end{figure}
 
@@ -307,28 +325,26 @@ where:
 
 This loss penalizes larger errors more heavily, encouraging the model to focus on capturing extreme variations in groundwater levels.
 
-The training and validation losses across epochs are shown in Figure~\ref{fig:myimage3}. The gradual convergence of both losses indicates that the model successfully generalizes without overfitting.
+The training and validation losses across epochs are shown in Figure~\ref{fig:model_performance}. The gradual convergence of both losses indicates that the model successfully generalizes without overfitting.
 
 \begin{figure}[pos=H]
     \centering
-    
     % Left image
     \begin{subfigure}[b]{0.56\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/model_training.png}
-        \caption{Training and validation loss over epochs.}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_6.png}
         \label{fig:myimage3}
     \end{subfigure}
     \hfill
     % Right image
     \begin{subfigure}[b]{0.4\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/model_metrics.png}
-        \caption{Evaluation metrics on the test set.}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_7.png}
         \label{fig:myimage4}
     \end{subfigure}
 
-    \caption{Overview of model performance.}
+\caption{Overview of model performance. (a) Training and validation loss across epochs, showing gradual convergence and indicating effective generalization without overfitting. (b) Evaluation metrics on the test set, illustrating the model's accuracy in capturing groundwater level dynamics and its sensitivity to extreme variations.}
+\label{fig:model_performance}
 \end{figure}
 
 
@@ -376,13 +392,13 @@ LSTM  & 2.9929 & 5.2329 & 0.9991 \\
 GRU   & 3.7084 & 6.2149 & 0.9988 \\
 \hline
 \end{tabular}
-\caption{Model performance comparison.}
+\caption{Comparison of model performance in groundwater level prediction. Metrics include mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination ($R^2$). The STGCN generally outperforms LSTM and GRU models, particularly for wells with irregular temporal patterns, highlighting its ability to capture complex spatio-temporal dependencies.}
 \label{tab:model_performance}
 \end{table}
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figs_rev1/lastones/metrics_comparison.png}
+    \includegraphics[width=0.8\textwidth]{figs_rev1/Figure_8.png}
     \caption{Metrics comparison of the two baseline models (LSTM and GRU) with the STGNN model.}
     \label{fig:metrics_comparison}
 \end{figure}
@@ -435,8 +451,8 @@ The proposed Spatio-Temporal Graph Convolutional Network (STGCN) demonstrated st
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=1\textwidth]{figs_rev1/lastones/predictions_comparison.png}
-    \caption{Predictions of the three models on training and testing datasets.}
+    \includegraphics[width=0.8\textwidth]{figs_rev1/Figure_9.png}
+    \caption{Comparison of observed and predicted groundwater levels for the training and testing periods. The close alignment illustrates the STGCN's ability to accurately capture both long-term trends and short-term fluctuations in groundwater dynamics.}
     \label{fig:time_series}
 \end{figure}
 
@@ -449,12 +465,12 @@ Figure \ref{fig:time_series} presents the hydrographs for three representative m
 \end{itemize}
 The close alignment in the testing phase confirms that the model does not merely memorize historical sequences but generalizes well to unseen climatic and hydrological conditions.
 
-\begin{figure}[pos=h!]
+\begin{figure}[pos=H]
     \centering
     % --- Left image: Scatter ---
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/density_obs_vs_pred.png}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_10.png}
         \caption{Observed vs predicted groundwater levels}
         \label{fig:obs_vs_pred}
     \end{subfigure}
@@ -462,11 +478,11 @@ The close alignment in the testing phase confirms that the model does not merely
     % --- Right image: Residuals ---
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/residuals_distribution.png}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_11.png}
         \caption{STGNN: Distribution of Residuals.}
         \label{fig:residuals_dist}
     \end{subfigure}
-    \caption{Comparison between model prediction performance and spatial error distribution.}
+    \caption{Evaluation of STGCN prediction performance. (a) Scatter plot of observed versus predicted groundwater levels, demonstrating strong agreement and model generalization to unseen conditions. (b) Distribution of residuals across all wells, highlighting the model’s error characteristics and overall prediction reliability.}
     \label{fig:scatter_hist}
 \end{figure}
 
@@ -485,7 +501,7 @@ The evaluation metrics (MAE, RMSE, and $R^2$) revealed that the STGCN achieved h
     % --- Left image ---
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/feature_importance.png}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_12.png}
         \caption{Global feature importance}
         \label{fig:feat_imp}
     \end{subfigure}
@@ -493,18 +509,18 @@ The evaluation metrics (MAE, RMSE, and $R^2$) revealed that the STGCN achieved h
     % --- Right image ---
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{figs_rev1/lastones/uncertainty_well.png}
+        \includegraphics[width=\textwidth]{figs_rev1/Figure_13.png}
         \caption{Model confidence interval (Well 766/53)}
         \label{fig:conf_int}
     \end{subfigure}
-    \caption{Model interpretability: Feature importance and confidence intervals.}
+    \caption{Model interpretability and reliability. (a) Global feature importance across all wells, showing which inputs most strongly influence STGCN predictions. (b) Prediction confidence intervals for well 766/53, illustrating the model’s uncertainty and robustness during periods of high groundwater variability.}
     \label{fig:feature_importance}
 \end{figure}
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=0.6\textwidth]{figs_rev1/lastones/uncertainty_vs_error.png}
-    \caption{Uncertainty vs Error}
+    \includegraphics[width=0.6\textwidth]{figs_rev1/Figure_14.png}
+    \caption{Relationship between predicted uncertainty and actual prediction error. The scatter plot shows that higher modeled uncertainty (standard deviation of predictions) corresponds to larger absolute errors, indicating that the STGCN’s uncertainty estimates are well-calibrated and can serve as a reliable proxy for risk in groundwater management decisions.}
     \label{fig:uncertainty_scatter}
 \end{figure}
 
@@ -525,8 +541,8 @@ Using spatial proximity as the basis for the graph structure proved effective in
 
 \begin{figure}[pos=H]
     \centering
-    \includegraphics[width=1\textwidth]{figs_rev1/lastones/combined_diagnostics_map_styled_fixed}
-    \caption{Model Diagnostics Map: Accuracy (Color) vs. Confidence (Size) for each well.}
+    \includegraphics[width=1\textwidth]{figs_rev1/Figure_15.png}
+    \caption{Spatial diagnostics of STGCN performance across the monitoring network. Node color represents prediction accuracy, while node size indicates model confidence. This visualization highlights wells where anthropogenic activities or local hydrogeological heterogeneity lead to deviations from the distance-based graph assumptions, providing insights for targeted model refinement and monitoring prioritization.}
     \label{fig:spatial_map}
 \end{figure}
 
@@ -573,11 +589,6 @@ Finally, to support long-term sustainable management, the framework should be ex
 
 \section{Acknowledgments}
 
-The authors would like to acknowledge ...
-now we should be modefing things here and the model will add them, yeah that 
-is the case, for now on, i think i will have to use the copilot thing yeah why not
-so what what should we be doing now, i think we should be adding more text to the document
-and see how it goes, yeah that is a good idea, i will try to do that
 
 \newpage
 
@@ -585,7 +596,7 @@ and see how it goes, yeah that is a good idea, i will try to do that
 
 Name of the code/library
 
-Contact: e-mail and phone number
+Contact: and phone number
 
 Hardware requirements: ...
 

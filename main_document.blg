@@ -6,47 +6,48 @@ The style file: cas-model2-names.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: bibliography.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Warning--empty pages in chen2008_faster_knn_graph
-Warning--empty pages in kipf2017gcn
-You've used 42 entries,
+Warning--empty booktitle in kipf_semi-supervised_2017
+Warning--empty pages in kipf_semi-supervised_2017
+Warning--empty journal in li_graph_2023
+You've used 40 entries,
             2990 wiz_defined-function locations,
-            1016 strings with 17701 characters,
-and the built_in function-call counts, 30595 in all, are:
-= -- 2253
-> -- 1516
-< -- 22
-+ -- 591
-- -- 537
-* -- 3525
-:= -- 4518
-add.period$ -- 142
-call.type$ -- 42
-change.case$ -- 390
+            1035 strings with 19463 characters,
+and the built_in function-call counts, 34506 in all, are:
+= -- 2528
+> -- 1944
+< -- 15
++ -- 751
+- -- 699
+* -- 4334
+:= -- 5053
+add.period$ -- 149
+call.type$ -- 40
+change.case$ -- 445
 chr.to.int$ -- 40
-cite$ -- 44
-duplicate$ -- 2176
-empty$ -- 2015
-format.name$ -- 662
-if$ -- 5597
-int.to.chr$ -- 3
+cite$ -- 43
+duplicate$ -- 2271
+empty$ -- 2089
+format.name$ -- 817
+if$ -- 6261
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 443
-newline$ -- 241
-num.names$ -- 168
-pop$ -- 772
+missing$ -- 516
+newline$ -- 244
+num.names$ -- 160
+pop$ -- 712
 preamble$ -- 1
-purify$ -- 344
+purify$ -- 393
 quote$ -- 0
-skip$ -- 639
+skip$ -- 597
 stack$ -- 0
-substring$ -- 1051
-swap$ -- 1675
-text.length$ -- 3
+substring$ -- 1196
+swap$ -- 1999
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 375
-warning$ -- 2
-while$ -- 167
+type$ -- 354
+warning$ -- 3
+while$ -- 172
 width$ -- 0
-write$ -- 640
-(There were 2 warnings)
+write$ -- 676
+(There were 3 warnings)

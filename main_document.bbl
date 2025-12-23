@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,45 +11,43 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
-%Type = Misc
-\bibitem[{Anderson and Woessner(2015)}]{anderson2015}
-\bibinfo{author}{Anderson, M.}, \bibinfo{author}{Woessner, W.},
-  \bibinfo{year}{2015}.
+%Type = Book
+\bibitem[{Anderson et~al.(2015)Anderson, Hunt and
+  Woessner}]{anderson_applied_2015}
+\bibinfo{author}{Anderson, M.P.}, \bibinfo{author}{Hunt, R.J.},
+  \bibinfo{author}{Woessner, W.W.}, \bibinfo{year}{2015}.
 \newblock \bibinfo{title}{Applied groundwater modeling: simulation of flow and
   advective transport}.
+\newblock \bibinfo{edition}{Second edition} ed., \bibinfo{publisher}{Academic
+  Press}, \bibinfo{address}{London, UK}.
 %Type = Article
-\bibitem[{Bai(2023)}]{bai2023_gnn_groundwater}
-\bibinfo{author}{Bai, T.}, \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Graph neural network for groundwater level
-  forecasting}.
-\newblock \bibinfo{journal}{Journal of Hydrology} \URLprefix
-  \url{https://www.sciencedirect.com/science/article/pii/S0022169422013622}.
-  \bibinfo{note}{uses GNNs for groundwater forecasting and discusses spatial
-  adjacency choices.}
-%Type = Article
-\bibitem[{Bai and Tahmasebi(2023)}]{baiGraphNeuralNetwork2023}
+\bibitem[{Bai and Tahmasebi(2023)}]{bai_graph_2023}
 \bibinfo{author}{Bai, T.}, \bibinfo{author}{Tahmasebi, P.},
   \bibinfo{year}{2023}.
 \newblock \bibinfo{title}{Graph neural network for groundwater level
   forecasting}.
 \newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{616},
   \bibinfo{pages}{128792}.
-\newblock \DOIprefix\doi{10.1016/j.jhydrol.2022.128792}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0022169422013622},
+  \DOIprefix\doi{10.1016/j.jhydrol.2022.128792}.
 %Type = Article
-\bibitem[{Borz{\`i}(2025)}]{borziModelingGroundwaterResources2025}
-\bibinfo{author}{Borz{\`i}, I.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Modeling {{Groundwater Resources}} in {{Data-Scarce
-  Regions}} for {{Sustainable Management}}: {{Methodologies}} and {{Limits}}}.
+\bibitem[{Borzì(2025)}]{borzi_modeling_2025}
+\bibinfo{author}{Borzì, I.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Modeling {Groundwater} {Resources} in {Data}-{Scarce}
+  {Regions} for {Sustainable} {Management}: {Methodologies} and {Limits}}.
 \newblock \bibinfo{journal}{Hydrology} \bibinfo{volume}{12},
   \bibinfo{pages}{11}.
-\newblock \DOIprefix\doi{10.3390/hydrology12010011}.
+\newblock \URLprefix \url{https://www.mdpi.com/2306-5338/12/1/11},
+  \DOIprefix\doi{10.3390/hydrology12010011}. \bibinfo{note}{publisher:
+  Multidisciplinary Digital Publishing Institute}.
 %Type = Article
 \bibitem[{Bouramtane et~al.(2025)Bouramtane, Mohsine, Karmouda, Leblanc,
-  Est{\`e}ve, Kacimi, Hilali, Mdhaffar, Tweed, Tahiri, Kassou, El~Bilali and
-  Chafki}]{bouramtaneDimensionalityReductionGroundwater2025}
+  Estève, Kacimi, Hilali, Mdhaffar, Tweed, Tahiri, Kassou, El~Bilali and
+  Chafki}]{bouramtane_dimensionality_2025}
 \bibinfo{author}{Bouramtane, T.}, \bibinfo{author}{Mohsine, I.},
   \bibinfo{author}{Karmouda, N.}, \bibinfo{author}{Leblanc, M.},
-  \bibinfo{author}{Est{\`e}ve, Y.}, \bibinfo{author}{Kacimi, I.},
+  \bibinfo{author}{Estève, Y.}, \bibinfo{author}{Kacimi, I.},
   \bibinfo{author}{Hilali, M.}, \bibinfo{author}{Mdhaffar, S.},
   \bibinfo{author}{Tweed, S.}, \bibinfo{author}{Tahiri, M.},
   \bibinfo{author}{Kassou, N.}, \bibinfo{author}{El~Bilali, A.},
@@ -58,36 +56,41 @@
   under drought and intensive irrigation with neural networks}.
 \newblock \bibinfo{journal}{Journal of Hydrology: Regional Studies}
   \bibinfo{volume}{60}, \bibinfo{pages}{102477}.
-\newblock \DOIprefix\doi{10.1016/j.ejrh.2025.102477}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S2214581825003027},
+  \DOIprefix\doi{10.1016/j.ejrh.2025.102477}.
 %Type = Book
-\bibitem[{Budyko(1974)}]{budyko1974climate}
+\bibitem[{Budyko(1974)}]{budyko_climate_1974}
 \bibinfo{author}{Budyko, M.I.}, \bibinfo{year}{1974}.
-\newblock \bibinfo{title}{Climate and life}.
-\newblock \bibinfo{publisher}{Academic Press}.
+\newblock \bibinfo{title}{Climate and life [by] {M}. {I}. {Budyko}. {Edited} by
+  {David} {H}. {Miller}}.
+\newblock International geophysics series ; v. 18.,
+  \bibinfo{publisher}{Academic Press}, \bibinfo{address}{New York}.
 %Type = Article
 \bibitem[{Chang et~al.(2025)Chang, Sun, Kow, Lee, Chang and
-  Chang}]{changAdvancedGroundwaterLevel2025}
+  Chang}]{chang_advanced_2025}
 \bibinfo{author}{Chang, Y.W.}, \bibinfo{author}{Sun, W.}, \bibinfo{author}{Kow,
   P.Y.}, \bibinfo{author}{Lee, M.H.}, \bibinfo{author}{Chang, L.C.},
   \bibinfo{author}{Chang, F.J.}, \bibinfo{year}{2025}.
 \newblock \bibinfo{title}{Advanced groundwater level forecasting with hybrid
-  deep learning model: {{Tackling}} water challenges in {{Taiwan}}'s largest
+  deep learning model: {Tackling} water challenges in {Taiwan}’s largest
   alluvial fan}.
 \newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{655},
   \bibinfo{pages}{132887}.
-\newblock \DOIprefix\doi{10.1016/j.jhydrol.2025.132887}.
-%Type = Inproceedings
-\bibitem[{Chen et~al.(2008)Chen, Fang and Saad}]{chen2008_faster_knn_graph}
-\bibinfo{author}{Chen, J.}, \bibinfo{author}{Fang, H.R.},
-  \bibinfo{author}{Saad, Y.}, \bibinfo{year}{2008}.
-\newblock \bibinfo{title}{Fast approximate knn graph construction for high
-  dimensional data}, in: \bibinfo{booktitle}{UMN Technical Report /
-  Proceedings}.
 \newblock \URLprefix
-  \url{https://www-users.cse.umn.edu/~saad/PDF/umsi-2008-124.pdf}.
+  \url{https://www.sciencedirect.com/science/article/pii/S0022169425002252},
+  \DOIprefix\doi{10.1016/j.jhydrol.2025.132887}.
+%Type = Article
+\bibitem[{Chen et~al.(2009)Chen, Fang and Saad}]{chen_fast_2009}
+\bibinfo{author}{Chen, J.}, \bibinfo{author}{Fang, H.r.},
+  \bibinfo{author}{Saad, Y.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Fast {Approximate} {kNN} {Graph} {Construction} for
+  {High} {Dimensional} {Data} via {Recursive} {Lanczos} {Bisection}}.
+\newblock \bibinfo{journal}{J. Mach. Learn. Res.} \bibinfo{volume}{10},
+  \bibinfo{pages}{1989--2012}.
 %Type = Article
 \bibitem[{Chen et~al.(2025)Chen, Zhang, Xu, Zhou, Jin, Luan and
-  Wulamu}]{chenEnhancingAccuracyGroundwater2025}
+  Wulamu}]{chen_enhancing_2025}
 \bibinfo{author}{Chen, L.}, \bibinfo{author}{Zhang, D.}, \bibinfo{author}{Xu,
   J.}, \bibinfo{author}{Zhou, Z.}, \bibinfo{author}{Jin, J.},
   \bibinfo{author}{Luan, J.}, \bibinfo{author}{Wulamu, A.},
@@ -97,7 +100,8 @@
   model}.
 \newblock \bibinfo{journal}{Earth Science Informatics} \bibinfo{volume}{18},
   \bibinfo{pages}{250}.
-\newblock \DOIprefix\doi{10.1007/s12145-025-01741-z}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s12145-025-01741-z},
+  \DOIprefix\doi{10.1007/s12145-025-01741-z}.
 %Type = Misc
 \bibitem[{Didan(2021)}]{didan2015mod13q1}
 \bibinfo{author}{Didan, K.}, \bibinfo{year}{2021}.
@@ -109,22 +113,38 @@
   \DOIprefix\doi{10.5067/MODIS/MOD13A2.061}. \bibinfo{note}{data set. Accessed:
   2025-12-11}.
 %Type = Article
-\bibitem[{Elmotawakkil and
-  Enneya(2024)}]{elmotawakkilAdvancedMachineLearning2024}
+\bibitem[{El~Mezouary et~al.(2024)El~Mezouary, Hadri, Kharrou, Fakır,
+  Elfarchouni, Bouchaou and Chehbouni}]{el_mezouary_contribution_2024}
+\bibinfo{author}{El~Mezouary, L.}, \bibinfo{author}{Hadri, A.},
+  \bibinfo{author}{Kharrou, M.H.}, \bibinfo{author}{Fakır, Y.},
+  \bibinfo{author}{Elfarchouni, A.}, \bibinfo{author}{Bouchaou, L.},
+  \bibinfo{author}{Chehbouni, A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Contribution to advancing aquifer geometric mapping
+  using machine learning and deep learning techniques: a case study of the {AL}
+  {Haouz}-{Mejjate} aquifer, {Marrakech}, {Morocco}}.
+\newblock \bibinfo{journal}{Applied Water Science} \bibinfo{volume}{14},
+  \bibinfo{pages}{102}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s13201-024-02162-x},
+  \DOIprefix\doi{10.1007/s13201-024-02162-x}.
+%Type = Article
+\bibitem[{Elmotawakkil and Enneya(2024)}]{elmotawakkil_advanced_2024}
 \bibinfo{author}{Elmotawakkil, A.}, \bibinfo{author}{Enneya, N.},
   \bibinfo{year}{2024}.
 \newblock \bibinfo{title}{Advanced machine learning for predicting groundwater
-  decline and drought in the {{Rabat}}--{{Sal\'e}}--{{K\'enitra}} region,
-  {{Morocco}}}.
+  decline and drought in the {Rabat}–{Salé}–{Kénitra} region, {Morocco}}.
 \newblock \bibinfo{journal}{Journal of Hydroinformatics} \bibinfo{volume}{26},
   \bibinfo{pages}{2980--3007}.
-\newblock \DOIprefix\doi{10.2166/hydro.2024.328}.
+\newblock \URLprefix \url{https://doi.org/10.2166/hydro.2024.328},
+  \DOIprefix\doi{10.2166/hydro.2024.328}.
 %Type = Article
-\bibitem[{Famiglietti(2014)}]{famiglietti2014groundwater}
+\bibitem[{Famiglietti(2014)}]{famiglietti_global_2014}
 \bibinfo{author}{Famiglietti, J.S.}, \bibinfo{year}{2014}.
 \newblock \bibinfo{title}{The global groundwater crisis}.
 \newblock \bibinfo{journal}{Nature Climate Change} \bibinfo{volume}{4},
   \bibinfo{pages}{945--948}.
+\newblock \URLprefix \url{https://www.nature.com/articles/nclimate2425},
+  \DOIprefix\doi{10.1038/nclimate2425}. \bibinfo{note}{publisher: Nature
+  Publishing Group}.
 %Type = Techreport
 \bibitem[{{Food and Agriculture Organization of the United Nations
   (FAO)}(2020)}]{fao2020wapor}
@@ -148,98 +168,139 @@
   \bibinfo{pages}{150066}.
 \newblock \DOIprefix\doi{10.1038/sdata.2015.66}.
 %Type = Article
-\bibitem[{Gharehbaghi and Lin(2022)}]{gharehbaghi2022}
-\bibinfo{author}{Gharehbaghi, S.}, \bibinfo{author}{Lin, T.},
-  \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Time series based groundwater level forecasting using
-  gated recurrent unit deep neural networks}.
-\newblock \bibinfo{journal}{Environmental Modelling \& Software} .
+\bibitem[{{George H. Hargreaves} and {Zohrab A.
+  Samani}(1985)}]{george_h_hargreaves_reference_1985}
+\bibinfo{author}{{George H. Hargreaves}}, \bibinfo{author}{{Zohrab A. Samani}},
+  \bibinfo{year}{1985}.
+\newblock \bibinfo{title}{Reference {Crop} {Evapotranspiration} from
+  {Temperature}}.
+\newblock \bibinfo{journal}{Applied Engineering in Agriculture}
+  \bibinfo{volume}{1}, \bibinfo{pages}{96--99}.
+\newblock \URLprefix
+  \url{http://elibrary.asabe.org/abstract.asp??JID=3&AID=26773&CID=aeaj1985&v=1&i=2&T=1},
+  \DOIprefix\doi{10.13031/2013.26773}.
 %Type = Inproceedings
 \bibitem[{Gilmer et~al.(2017)Gilmer, Schoenholz, Riley, Vinyals and
-  Dahl}]{gilmer2017mpnn}
+  Dahl}]{gilmer_neural_2017}
 \bibinfo{author}{Gilmer, J.}, \bibinfo{author}{Schoenholz, S.S.},
   \bibinfo{author}{Riley, P.F.}, \bibinfo{author}{Vinyals, O.},
   \bibinfo{author}{Dahl, G.E.}, \bibinfo{year}{2017}.
-\newblock \bibinfo{title}{Neural message passing for quantum chemistry}, in:
-  \bibinfo{booktitle}{Proceedings of the 34th International Conference on
-  Machine Learning}, pp. \bibinfo{pages}{1263--1272}.
+\newblock \bibinfo{title}{Neural message passing for {Quantum} chemistry}, in:
+  \bibinfo{booktitle}{Proceedings of the 34th {International} {Conference} on
+  {Machine} {Learning} - {Volume} 70}, \bibinfo{publisher}{JMLR.org},
+  \bibinfo{address}{Sydney, NSW, Australia}. pp. \bibinfo{pages}{1263--1272}.
 %Type = Inproceedings
-\bibitem[{Kipf and Welling(2017)}]{kipf2017gcn}
+\bibitem[{Kipf and Welling(2017)}]{kipf_semi-supervised_2017}
 \bibinfo{author}{Kipf, T.N.}, \bibinfo{author}{Welling, M.},
   \bibinfo{year}{2017}.
-\newblock \bibinfo{title}{Semi-supervised classification with graph
-  convolutional networks}, in: \bibinfo{booktitle}{International Conference on
-  Learning Representations}.
+\newblock \bibinfo{title}{Semi-{Supervised} {Classification} with {Graph}
+  {Convolutional} {Networks}}.
 \newblock \URLprefix \url{https://openreview.net/forum?id=SJU4ayYgl}.
 %Type = Article
-\bibitem[{Lhoussaine et~al.(2024)Lhoussaine, Abdessamad, Mohamed, Fakir,
-  Younes~Elfarchouni and
-  Chehbouni}]{elmezouaryContributionAdvancingAquifer2024a}
-\bibinfo{author}{Lhoussaine, E.M.}, \bibinfo{author}{Abdessamad, H.},
-  \bibinfo{author}{Mohamed, K.}, \bibinfo{author}{Fakir, H.},
-  \bibinfo{author}{Younes~Elfarchouni, A.B.}, \bibinfo{author}{Chehbouni, L.},
-  \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{Contribution to advancing aquifer geometric mapping
-  using machine learning and deep learning techniques: a case study of the {AL}
-  {Haouz}-{Mejjate} aquifer, {Marrakech}, {Morocco}}.
-\newblock \bibinfo{journal}{Applied Water Science} \bibinfo{volume}{14}.
-\newblock \URLprefix \url{https://doi.org/10.1007/s13201-024-02162-x},
-  \DOIprefix\doi{10.1007/s13201-024-02162-x}.
-%Type = Misc
-\bibitem[{Li et~al.(2024)Li, Yu, Liu, Zhang, Gong and
-  Zhao}]{liGraphNeuralNetwork2023}
+\bibitem[{Li et~al.(2022)Li, Du and Gippel}]{li_modified_2022}
+\bibinfo{author}{Li, S.}, \bibinfo{author}{Du, T.}, \bibinfo{author}{Gippel,
+  C.J.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A {Modified} {Fu} (1981) {Equation} with a
+  {Time}-varying {Parameter} that {Improves} {Estimates} of {Inter}-annual
+  {Variability} in {Catchment} {Water} {Balance}}.
+\newblock \bibinfo{journal}{Water Resources Management} \bibinfo{volume}{36},
+  \bibinfo{pages}{1645--1659}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s11269-021-03057-1},
+  \DOIprefix\doi{10.1007/s11269-021-03057-1}.
+%Type = Article
+\bibitem[{Li et~al.(2023)Li, Yu, Liu, Zhang, Gong and Zhao}]{li_graph_2023}
 \bibinfo{author}{Li, Y.}, \bibinfo{author}{Yu, D.}, \bibinfo{author}{Liu, Z.},
   \bibinfo{author}{Zhang, M.}, \bibinfo{author}{Gong, X.},
-  \bibinfo{author}{Zhao, L.}, \bibinfo{year}{2024}.
-\newblock \bibinfo{title}{Graph neural network for spatiotemporal data: Methods
-  and applications}.
-\newblock \URLprefix \url{https://papers.ssrn.com/abstract=4725185},
-  \DOIprefix\doi{10.2139/ssrn.4725185}.
+  \bibinfo{author}{Zhao, L.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Graph {Neural} {Network} for spatiotemporal data:
+  methods and applications} \URLprefix \url{https://arxiv.org/abs/2306.00012},
+  \DOIprefix\doi{10.48550/ARXIV.2306.00012}. \bibinfo{note}{publisher: arXiv
+  Version Number: 1}.
 %Type = Article
 \bibitem[{Liang et~al.(2025)Liang, Gloaguen, Claprood, Paradis and
-  Lauzon}]{liangGraphNeuralNetwork2025}
+  Lauzon}]{liang_graph_2025}
 \bibinfo{author}{Liang, X.X.}, \bibinfo{author}{Gloaguen, E.},
   \bibinfo{author}{Claprood, M.}, \bibinfo{author}{Paradis, D.},
   \bibinfo{author}{Lauzon, D.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Graph {{Neural Network Framework}} for
-  {{Spatiotemporal Groundwater Level Forecasting}}}.
+\newblock \bibinfo{title}{Graph {Neural} {Network} {Framework} for
+  {Spatiotemporal} {Groundwater} {Level} {Forecasting}}.
 \newblock \bibinfo{journal}{Mathematical Geosciences} \bibinfo{volume}{57},
   \bibinfo{pages}{1071--1093}.
-\newblock \DOIprefix\doi{10.1007/s11004-025-10194-5}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s11004-025-10194-5},
+  \DOIprefix\doi{10.1007/s11004-025-10194-5}.
+%Type = Article
+\bibitem[{Lin et~al.(2022)Lin, Gharehbaghi, Zhang, Band, Pai, Chau and
+  Mosavi}]{lin_time_2022}
+\bibinfo{author}{Lin, H.}, \bibinfo{author}{Gharehbaghi, A.},
+  \bibinfo{author}{Zhang, Q.}, \bibinfo{author}{Band, S.S.},
+  \bibinfo{author}{Pai, H.T.}, \bibinfo{author}{Chau, K.W.},
+  \bibinfo{author}{Mosavi, A.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Time series-based groundwater level forecasting using
+  gated recurrent unit deep neural networks}.
+\newblock \bibinfo{journal}{Engineering Applications of Computational Fluid
+  Mechanics} \bibinfo{volume}{16}, \bibinfo{pages}{1655--1672}.
+\newblock \URLprefix \url{https://doi.org/10.1080/19942060.2022.2104928},
+  \DOIprefix\doi{10.1080/19942060.2022.2104928}. \bibinfo{note}{publisher:
+  Taylor \& Francis \_eprint: https://doi.org/10.1080/19942060.2022.2104928}.
 %Type = Article
 \bibitem[{Mahammad et~al.(2023)Mahammad, Islam, Shit, Towfiqul~Islam and
-  Alam}]{mahammadGroundwaterLevelDynamics2023}
+  Alam}]{mahammad_groundwater_2023}
 \bibinfo{author}{Mahammad, S.}, \bibinfo{author}{Islam, A.},
   \bibinfo{author}{Shit, P.K.}, \bibinfo{author}{Towfiqul~Islam, A.R.M.},
   \bibinfo{author}{Alam, E.}, \bibinfo{year}{2023}.
 \newblock \bibinfo{title}{Groundwater level dynamics in a subtropical fan delta
-  region and its future prediction using machine learning tools:
-  {{Sustainable}} groundwater restoration}.
+  region and its future prediction using machine learning tools: {Sustainable}
+  groundwater restoration}.
 \newblock \bibinfo{journal}{Journal of Hydrology: Regional Studies}
   \bibinfo{volume}{47}, \bibinfo{pages}{101385}.
-\newblock \DOIprefix\doi{10.1016/j.ejrh.2023.101385}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S2214581823000721},
+  \DOIprefix\doi{10.1016/j.ejrh.2023.101385}.
 %Type = Article
-\bibitem[{Mukherjee~A. et~al.(2024)}]{mukherjee2024}
-\bibinfo{author}{Mukherjee~A., C.P.}, et~al., \bibinfo{year}{2024}.
+\bibitem[{Mukherjee et~al.(2024)Mukherjee, Coomar, Sarkar, Johannesson, Fryar,
+  Schreiber, Ahmed, Alam, Bhattacharya, Bundschuh, Burgess, Chakraborty, Coyte,
+  Farooqi, Guo, Ijumulana, Jeelani, Mondal, Nordstrom, Podgorski, Polya,
+  Scanlon, Shamsudduha, Tapia and Vengosh}]{mukherjee_arsenic_2024}
+\bibinfo{author}{Mukherjee, A.}, \bibinfo{author}{Coomar, P.},
+  \bibinfo{author}{Sarkar, S.}, \bibinfo{author}{Johannesson, K.H.},
+  \bibinfo{author}{Fryar, A.E.}, \bibinfo{author}{Schreiber, M.E.},
+  \bibinfo{author}{Ahmed, K.M.}, \bibinfo{author}{Alam, M.A.},
+  \bibinfo{author}{Bhattacharya, P.}, \bibinfo{author}{Bundschuh, J.},
+  \bibinfo{author}{Burgess, W.}, \bibinfo{author}{Chakraborty, M.},
+  \bibinfo{author}{Coyte, R.}, \bibinfo{author}{Farooqi, A.},
+  \bibinfo{author}{Guo, H.}, \bibinfo{author}{Ijumulana, J.},
+  \bibinfo{author}{Jeelani, G.}, \bibinfo{author}{Mondal, D.},
+  \bibinfo{author}{Nordstrom, D.K.}, \bibinfo{author}{Podgorski, J.},
+  \bibinfo{author}{Polya, D.A.}, \bibinfo{author}{Scanlon, B.R.},
+  \bibinfo{author}{Shamsudduha, M.}, \bibinfo{author}{Tapia, J.},
+  \bibinfo{author}{Vengosh, A.}, \bibinfo{year}{2024}.
 \newblock \bibinfo{title}{Arsenic and other geogenic contaminants in global
-  groundwater.}
-\newblock \bibinfo{journal}{Nature Reviews Earth and Environment,} .
+  groundwater}.
+\newblock \bibinfo{journal}{Nature Reviews Earth \& Environment}
+  \bibinfo{volume}{5}, \bibinfo{pages}{312--328}.
+\newblock \URLprefix \url{https://www.nature.com/articles/s43017-024-00519-z},
+  \DOIprefix\doi{10.1038/s43017-024-00519-z}. \bibinfo{note}{publisher: Nature
+  Publishing Group}.
 %Type = Article
 \bibitem[{Nayak et~al.(2006)Nayak, Satyaji~Rao and
-  Sudheer}]{nayak2006groundwater}
+  Sudheer}]{nayak_groundwater_2006}
 \bibinfo{author}{Nayak, P.C.}, \bibinfo{author}{Satyaji~Rao, Y.},
   \bibinfo{author}{Sudheer, K.}, \bibinfo{year}{2006}.
-\newblock \bibinfo{title}{Groundwater level forecasting in a shallow aquifer
-  using artificial neural network approach}.
+\newblock \bibinfo{title}{Groundwater {Level} {Forecasting} in {A} {Shallow}
+  {Aquifer} {Using} {Artificial} {Neural} {Network} {Approach}}.
 \newblock \bibinfo{journal}{Water Resources Management} \bibinfo{volume}{20},
   \bibinfo{pages}{77--90}.
+\newblock \DOIprefix\doi{10.1007/s11269-006-4007-z}.
 %Type = Article
-\bibitem[{Refsgaard(1997)}]{refsgaard1997parameterization}
+\bibitem[{Refsgaard(1997)}]{refsgaard_parameterisation_1997}
 \bibinfo{author}{Refsgaard, J.C.}, \bibinfo{year}{1997}.
-\newblock \bibinfo{title}{Parameterization, calibration, and validation of
+\newblock \bibinfo{title}{Parameterisation, calibration and validation of
   distributed hydrological models}.
 \newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{198},
   \bibinfo{pages}{69--97}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S002216949603329X},
+  \DOIprefix\doi{10.1016/S0022-1694(96)03329-X}.
 %Type = Article
 \bibitem[{Rodell et~al.(2004)Rodell, Houser, Jambor, Gottschalck, Mitchell,
   Meng, Arsenault, Cosgrove, Radakovich, Bosilovich, Entin, Walker, Lohmann and
@@ -256,30 +317,31 @@
 \newblock \bibinfo{journal}{Bulletin of the American Meteorological Society}
   \bibinfo{volume}{85}, \bibinfo{pages}{381--394}.
 %Type = Misc
-\bibitem[{Sahili and Awad(2023)}]{sahiliSpatioTemporalGraphNeural2023}
+\bibitem[{Sahili and Awad(2023)}]{sahili_spatio-temporal_2023}
 \bibinfo{author}{Sahili, Z.A.}, \bibinfo{author}{Awad, M.},
   \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Spatio-{{Temporal Graph Neural Networks}}: {{A
-  Survey}}}.
-\newblock \DOIprefix\doi{10.48550/arXiv.2301.10569},
-  \href{http://arxiv.org/abs/2301.10569}{\tt arXiv:2301.10569}.
+\newblock \bibinfo{title}{Spatio-{Temporal} {Graph} {Neural} {Networks}: {A}
+  {Survey}}.
+\newblock \URLprefix \url{http://arxiv.org/abs/2301.10569},
+  \DOIprefix\doi{10.48550/arXiv.2301.10569}. \bibinfo{note}{arXiv:2301.10569
+  [cs]}.
 %Type = Article
-\bibitem[{Sahoo and Jha(2013)}]{sahooGroundwaterlevelPredictionUsing2013}
+\bibitem[{Sahoo and Jha(2013)}]{sahoo_groundwater-level_2013}
 \bibinfo{author}{Sahoo, S.}, \bibinfo{author}{Jha, M.K.}, \bibinfo{year}{2013}.
 \newblock \bibinfo{title}{Groundwater-level prediction using multiple linear
-  regression and artificial neural network techniques: A comparative
+  regression and artificial neural network techniques: a comparative
   assessment}.
 \newblock \bibinfo{journal}{Hydrogeology Journal} \bibinfo{volume}{21},
   \bibinfo{pages}{1865--1887}.
-\newblock \DOIprefix\doi{10.1007/s10040-013-1029-5}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s10040-013-1029-5},
+  \DOIprefix\doi{10.1007/s10040-013-1029-5}.
 %Type = Article
-\bibitem[{Scanlon et~al.(2023)Scanlon, Fakhreddine, Rateb, {de Graaf},
+\bibitem[{Scanlon et~al.(2023)Scanlon, Fakhreddine, Rateb, de~Graaf,
   Famiglietti, Gleeson, Grafton, Jobbagy, Kebede, Kolusu, Konikow, Long,
   Mekonnen, Schmied, Mukherjee, MacDonald, Reedy, Shamsudduha, Simmons, Sun,
-  Taylor, Villholth, V{\"o}r{\"o}smarty and
-  Zheng}]{scanlonGlobalWaterResources2023}
+  Taylor, Villholth, Vörösmarty and Zheng}]{scanlon_global_2023}
 \bibinfo{author}{Scanlon, B.R.}, \bibinfo{author}{Fakhreddine, S.},
-  \bibinfo{author}{Rateb, A.}, \bibinfo{author}{{de Graaf}, I.},
+  \bibinfo{author}{Rateb, A.}, \bibinfo{author}{de~Graaf, I.},
   \bibinfo{author}{Famiglietti, J.}, \bibinfo{author}{Gleeson, T.},
   \bibinfo{author}{Grafton, R.Q.}, \bibinfo{author}{Jobbagy, E.},
   \bibinfo{author}{Kebede, S.}, \bibinfo{author}{Kolusu, S.R.},
@@ -289,80 +351,108 @@
   \bibinfo{author}{Reedy, R.C.}, \bibinfo{author}{Shamsudduha, M.},
   \bibinfo{author}{Simmons, C.T.}, \bibinfo{author}{Sun, A.},
   \bibinfo{author}{Taylor, R.G.}, \bibinfo{author}{Villholth, K.G.},
-  \bibinfo{author}{V{\"o}r{\"o}smarty, C.J.}, \bibinfo{author}{Zheng, C.},
+  \bibinfo{author}{Vörösmarty, C.J.}, \bibinfo{author}{Zheng, C.},
   \bibinfo{year}{2023}.
 \newblock \bibinfo{title}{Global water resources and the role of groundwater in
   a resilient water future}.
 \newblock \bibinfo{journal}{Nature Reviews Earth \& Environment}
   \bibinfo{volume}{4}, \bibinfo{pages}{87--101}.
-\newblock \DOIprefix\doi{10.1038/s43017-022-00378-6}.
+\newblock \URLprefix \url{https://www.nature.com/articles/s43017-022-00378-6},
+  \DOIprefix\doi{10.1038/s43017-022-00378-6}. \bibinfo{note}{publisher: Nature
+  Publishing Group}.
 %Type = Article
-\bibitem[{Scarselli et~al.(2008)Scarselli, Gori, Tsoi, Hagenbuchner and
-  Monfardini}]{scarselli2008}
+\bibitem[{Scarselli et~al.(2009)Scarselli, Gori, {Ah Chung Tsoi}, Hagenbuchner
+  and Monfardini}]{scarselli_graph_2009}
 \bibinfo{author}{Scarselli, F.}, \bibinfo{author}{Gori, M.},
-  \bibinfo{author}{Tsoi, A.C.}, \bibinfo{author}{Hagenbuchner, M.},
-  \bibinfo{author}{Monfardini, G.}, \bibinfo{year}{2008}.
-\newblock \bibinfo{title}{The graph neural network model}.
+  \bibinfo{author}{{Ah Chung Tsoi}}, \bibinfo{author}{Hagenbuchner, M.},
+  \bibinfo{author}{Monfardini, G.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{The {Graph} {Neural} {Network} {Model}}.
 \newblock \bibinfo{journal}{IEEE Transactions on Neural Networks}
   \bibinfo{volume}{20}, \bibinfo{pages}{61--80}.
+\newblock \URLprefix \url{http://ieeexplore.ieee.org/document/4700287/},
+  \DOIprefix\doi{10.1109/TNN.2008.2005605}.
 %Type = Article
-\bibitem[{Sophocleous(2002)}]{sophocleous2002groundwater}
+\bibitem[{Sophocleous(2002)}]{sophocleous_interactions_2002}
 \bibinfo{author}{Sophocleous, M.}, \bibinfo{year}{2002}.
 \newblock \bibinfo{title}{Interactions between groundwater and surface water:
   the state of the science}.
 \newblock \bibinfo{journal}{Hydrogeology Journal} \bibinfo{volume}{10},
   \bibinfo{pages}{52--67}.
-%Type = Misc
-\bibitem[{Sun~J. et~al.(2022)}]{sun2022}
-\bibinfo{author}{Sun~J., H.L.}, et~al., \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Data‐driven models for accurate groundwater level
-  prediction and their practical significance in groundwater management.}
-\newblock \bibinfo{note}{Journal of Hydrology}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s10040-001-0170-8},
+  \DOIprefix\doi{10.1007/s10040-001-0170-8}.
 %Type = Article
-\bibitem[{Taccari et~al.(2024a)Taccari, Wang, Nuttall, Chen and
-  Jimack}]{taccariSpatialtemporalGraphNeural2024}
+\bibitem[{Sun et~al.(2022)Sun, Hu, Li, Sun and Yang}]{sun_data-driven_2022}
+\bibinfo{author}{Sun, J.}, \bibinfo{author}{Hu, L.}, \bibinfo{author}{Li, D.},
+  \bibinfo{author}{Sun, K.}, \bibinfo{author}{Yang, Z.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Data-driven models for accurate groundwater level
+  prediction and their practical significance in groundwater management}.
+\newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{608},
+  \bibinfo{pages}{127630}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0022169422002050},
+  \DOIprefix\doi{10.1016/j.jhydrol.2022.127630}.
+%Type = Article
+\bibitem[{Taccari et~al.(2024)Taccari, Wang, Nuttall, Chen and
+  Jimack}]{taccari_spatial-temporal_2024}
 \bibinfo{author}{Taccari, M.L.}, \bibinfo{author}{Wang, H.},
   \bibinfo{author}{Nuttall, J.}, \bibinfo{author}{Chen, X.},
-  \bibinfo{author}{Jimack, P.K.}, \bibinfo{year}{2024}a.
+  \bibinfo{author}{Jimack, P.K.}, \bibinfo{year}{2024}.
 \newblock \bibinfo{title}{Spatial-temporal graph neural networks for
   groundwater data}.
 \newblock \bibinfo{journal}{Scientific Reports} \bibinfo{volume}{14},
   \bibinfo{pages}{24564}.
-\newblock \DOIprefix\doi{10.1038/s41598-024-75385-2}.
+\newblock \URLprefix \url{https://www.nature.com/articles/s41598-024-75385-2},
+  \DOIprefix\doi{10.1038/s41598-024-75385-2}. \bibinfo{note}{publisher: Nature
+  Publishing Group}.
 %Type = Article
-\bibitem[{Taccari et~al.(2024b)Taccari, Wang and
-  colleagues}]{taccari2024stgnn_groundwater}
-\bibinfo{author}{Taccari, M.L.}, \bibinfo{author}{Wang, X.},
-  \bibinfo{author}{colleagues}, \bibinfo{year}{2024}b.
-\newblock \bibinfo{title}{Spatial-temporal graph neural networks for
-  groundwater data}.
-\newblock \bibinfo{journal}{Scientific Reports} \URLprefix
-  \url{https://www.nature.com/articles/s41598-024-75385-2}.
-  \bibinfo{note}{application of ST-GNNs to predict groundwater levels; includes
-  graph construction details.}
-%Type = Article
-\bibitem[{Talib et~al.(2024)Talib, Desai and
-  Huang}]{talibSpatialTemporalForecasting2024}
+\bibitem[{Talib et~al.(2024)Talib, Desai and Huang}]{talib_spatial_2024}
 \bibinfo{author}{Talib, A.}, \bibinfo{author}{Desai, A.R.},
   \bibinfo{author}{Huang, J.}, \bibinfo{year}{2024}.
 \newblock \bibinfo{title}{Spatial and temporal forecasting of groundwater
   anomalies in complex aquifer undergoing climate and land use change}.
 \newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{639},
   \bibinfo{pages}{131525}.
-\newblock \DOIprefix\doi{10.1016/j.jhydrol.2024.131525}.
-%Type = Misc
-\bibitem[{Taylor~R. et~al.(2013)}]{taylor2013}
-\bibinfo{author}{Taylor~R., S.B.}, et~al., \bibinfo{year}{2013}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0022169424009211},
+  \DOIprefix\doi{10.1016/j.jhydrol.2024.131525}.
+%Type = Article
+\bibitem[{Taylor et~al.(2013)Taylor, Scanlon, Döll, Rodell, van Beek, Wada,
+  Longuevergne, Leblanc, Famiglietti, Edmunds, Konikow, Green, Chen, Taniguchi,
+  Bierkens, MacDonald, Fan, Maxwell, Yechieli, Gurdak, Allen, Shamsudduha,
+  Hiscock, Yeh, Holman and Treidel}]{taylor_ground_2013}
+\bibinfo{author}{Taylor, R.G.}, \bibinfo{author}{Scanlon, B.},
+  \bibinfo{author}{Döll, P.}, \bibinfo{author}{Rodell, M.},
+  \bibinfo{author}{van Beek, R.}, \bibinfo{author}{Wada, Y.},
+  \bibinfo{author}{Longuevergne, L.}, \bibinfo{author}{Leblanc, M.},
+  \bibinfo{author}{Famiglietti, J.S.}, \bibinfo{author}{Edmunds, M.},
+  \bibinfo{author}{Konikow, L.}, \bibinfo{author}{Green, T.R.},
+  \bibinfo{author}{Chen, J.}, \bibinfo{author}{Taniguchi, M.},
+  \bibinfo{author}{Bierkens, M.F.P.}, \bibinfo{author}{MacDonald, A.},
+  \bibinfo{author}{Fan, Y.}, \bibinfo{author}{Maxwell, R.M.},
+  \bibinfo{author}{Yechieli, Y.}, \bibinfo{author}{Gurdak, J.J.},
+  \bibinfo{author}{Allen, D.M.}, \bibinfo{author}{Shamsudduha, M.},
+  \bibinfo{author}{Hiscock, K.}, \bibinfo{author}{Yeh, P.J.F.},
+  \bibinfo{author}{Holman, I.}, \bibinfo{author}{Treidel, H.},
+  \bibinfo{year}{2013}.
 \newblock \bibinfo{title}{Ground water and climate change}.
+\newblock \bibinfo{journal}{Nature Climate Change} \bibinfo{volume}{3},
+  \bibinfo{pages}{322--329}.
+\newblock \URLprefix \url{https://www.nature.com/articles/nclimate1744},
+  \DOIprefix\doi{10.1038/nclimate1744}. \bibinfo{note}{publisher: Nature
+  Publishing Group}.
 %Type = Article
 \bibitem[{Wada et~al.(2010)Wada, van Beek, van Kempen, Reckman, Vasak and
-  Bierkens}]{wada2010global}
-\bibinfo{author}{Wada, Y.}, \bibinfo{author}{van Beek, L.},
-  \bibinfo{author}{van Kempen, C.}, \bibinfo{author}{Reckman, J.},
-  \bibinfo{author}{Vasak, S.}, \bibinfo{author}{Bierkens, M.},
+  Bierkens}]{wada_global_2010}
+\bibinfo{author}{Wada, Y.}, \bibinfo{author}{van Beek, L.P.H.},
+  \bibinfo{author}{van Kempen, C.M.}, \bibinfo{author}{Reckman, J.W.T.M.},
+  \bibinfo{author}{Vasak, S.}, \bibinfo{author}{Bierkens, M.F.P.},
   \bibinfo{year}{2010}.
 \newblock \bibinfo{title}{Global depletion of groundwater resources}.
 \newblock \bibinfo{journal}{Geophysical Research Letters} \bibinfo{volume}{37}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1029/2010GL044571},
+  \DOIprefix\doi{10.1029/2010GL044571}. \bibinfo{note}{\_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2010GL044571}.
 %Type = Misc
 \bibitem[{Wan et~al.(2021)Wan, Hook and Hulley}]{wan2015modis}
 \bibinfo{author}{Wan, Z.}, \bibinfo{author}{Hook, S.}, \bibinfo{author}{Hulley,
@@ -375,7 +465,7 @@
   \DOIprefix\doi{10.5067/MODIS/MOD11A2.061}.
 %Type = Article
 \bibitem[{Wang et~al.(2024)Wang, Jiang, Song, Yu, Yuan and
-  Zhang}]{wangGroundwaterLevelSpatiotemporal2024}
+  Zhang}]{wang_groundwater_2024}
 \bibinfo{author}{Wang, L.}, \bibinfo{author}{Jiang, Z.}, \bibinfo{author}{Song,
   L.}, \bibinfo{author}{Yu, X.}, \bibinfo{author}{Yuan, S.},
   \bibinfo{author}{Zhang, B.}, \bibinfo{year}{2024}.
@@ -383,52 +473,33 @@
   based on graph convolutional networks with a long short-term memory}.
 \newblock \bibinfo{journal}{Journal of Hydroinformatics} \bibinfo{volume}{26},
   \bibinfo{pages}{2962--2979}.
-\newblock \DOIprefix\doi{10.2166/hydro.2024.226}.
+\newblock \URLprefix \url{https://doi.org/10.2166/hydro.2024.226},
+  \DOIprefix\doi{10.2166/hydro.2024.226}.
 %Type = Article
-\bibitem[{Wu(2025)}]{wu2025_forecasting_multiple_spatial_dependencies}
-\bibinfo{author}{Wu, Y.}, \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Forecasting groundwater level by characterizing
-  multiple forms of spatial dependencies}.
-\newblock \bibinfo{journal}{Journal of Geophysical Research / Water Resources
-  (AGU)} \URLprefix
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JH000520}.
-  \bibinfo{note}{discussion of combining distance and correlation/functional
-  spatial dependencies.}
-%Type = Article
-\bibitem[{Wu et~al.(2025)Wu, Mei, Shao, Xu and
-  Peng}]{wuForecastingGroundwaterLevel2025}
+\bibitem[{Wu et~al.(2025)Wu, Mei, Shao, Xu and Peng}]{wu_forecasting_2025}
 \bibinfo{author}{Wu, Y.}, \bibinfo{author}{Mei, G.}, \bibinfo{author}{Shao,
   K.}, \bibinfo{author}{Xu, N.}, \bibinfo{author}{Peng, J.},
   \bibinfo{year}{2025}.
-\newblock \bibinfo{title}{Forecasting {{Groundwater Level}} by {{Characterizing
-  Multiple Spatial Dependencies}} of {{Environmental Factors Using Graph-Based
-  Deep Learning}}}.
+\newblock \bibinfo{title}{Forecasting {Groundwater} {Level} by {Characterizing}
+  {Multiple} {Spatial} {Dependencies} of {Environmental} {Factors} {Using}
+  {Graph}-{Based} {Deep} {Learning}}.
 \newblock \bibinfo{journal}{Journal of Geophysical Research: Machine Learning
   and Computation} \bibinfo{volume}{2}, \bibinfo{pages}{e2024JH000520}.
-\newblock \DOIprefix\doi{10.1029/2024JH000520}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1029/2024JH000520},
+  \DOIprefix\doi{10.1029/2024JH000520}. \bibinfo{note}{\_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024JH000520}.
 %Type = Inproceedings
-\bibitem[{Yu et~al.(2018a)Yu, Yin and
-  Zhu}]{yuSpatioTemporalGraphConvolutional2018}
+\bibitem[{Yu et~al.(2018)Yu, Yin and Zhu}]{yu_spatio-temporal_2018}
 \bibinfo{author}{Yu, B.}, \bibinfo{author}{Yin, H.}, \bibinfo{author}{Zhu, Z.},
-  \bibinfo{year}{2018}a.
-\newblock \bibinfo{title}{Spatio-{{Temporal Graph Convolutional Networks}}: {{A
-  Deep Learning Framework}} for {{Traffic Forecasting}}}, in:
-  \bibinfo{booktitle}{Proceedings of the {{Twenty-Seventh International Joint
-  Conference}} on {{Artificial Intelligence}}}, pp.
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Spatio-{Temporal} {Graph} {Convolutional} {Networks}:
+  {A} {Deep} {Learning} {Framework} for {Traffic} {Forecasting}}, in:
+  \bibinfo{booktitle}{Proceedings of the {Twenty}-{Seventh} {International}
+  {Joint} {Conference} on {Artificial} {Intelligence}}, pp.
   \bibinfo{pages}{3634--3640}.
-\newblock \DOIprefix\doi{10.24963/ijcai.2018/505},
-  \href{http://arxiv.org/abs/1709.04875}{\tt arXiv:1709.04875}.
-%Type = Inproceedings
-\bibitem[{Yu et~al.(2018b)Yu, Yin and Zhu}]{yu2018stgcn}
-\bibinfo{author}{Yu, B.}, \bibinfo{author}{Yin, H.}, \bibinfo{author}{Zhu, Z.},
-  \bibinfo{year}{2018}b.
-\newblock \bibinfo{title}{Spatio-temporal graph convolutional networks: A deep
-  learning framework for traffic forecasting}, in:
-  \bibinfo{booktitle}{Proceedings of the Twenty-Seventh International Joint
-  Conference on Artificial Intelligence, {IJCAI}-18},
-  \bibinfo{publisher}{International Joint Conferences on Artificial
-  Intelligence Organization}. pp. \bibinfo{pages}{3634--3640}.
-\newblock \URLprefix \url{https://doi.org/10.24963/ijcai.2018/505},
-  \DOIprefix\doi{10.24963/ijcai.2018/505}.
+\newblock \URLprefix \url{http://arxiv.org/abs/1709.04875},
+  \DOIprefix\doi{10.24963/ijcai.2018/505}. \bibinfo{note}{arXiv:1709.04875
+  [cs]}.
 
 \end{thebibliography}
