@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.9)  23 DEC 2025 12:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.9)  25 DEC 2025 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,153 +730,153 @@ Package caption Info: End \AtBeginDocument code.
 \openout4 = `main_document.abs'.
 
 
-Overfull \hbox (2.99686pt too wide) in paragraph at lines 93--94
+Overfull \hbox (2.99686pt too wide) in paragraph at lines 94--95
 []\T1/stix/m/n/8 Spatiotemporal graph neu-ral net-works 
  []
 
-LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 97.
+LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 98.
 (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 97.
+LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 97.
+LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 97.
+LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 97.
+LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 97.
+LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 97.
+LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 98.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 )
-Overfull \hbox (117.0831pt too wide) detected at line 97
+Overfull \hbox (117.0831pt too wide) detected at line 98
 []
  []
 
 (main_document.abs)
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
  
  []
 
 [1
 
 {C:/Users/SURFACE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix/stix-t1.enc}] [2] [3]
-<figs_rev1/Figure_1.png, id=125, 844.8363pt x 597.432pt>
+<figs_rev1/Figure_1.png, id=124, 844.8363pt x 597.432pt>
 File: figs_rev1/Figure_1.png Graphic file (type png)
 <use figs_rev1/Figure_1.png>
-Package pdftex.def Info: figs_rev1/Figure_1.png  used on input line 152.
+Package pdftex.def Info: figs_rev1/Figure_1.png  used on input line 153.
 (pdftex.def)             Requested size: 468.3324pt x 331.18669pt.
  [4 <./figs_rev1/Figure_1.png>]
-LaTeX Font Info:    Trying to load font information for TS1+stix on input line 164.
+LaTeX Font Info:    Trying to load font information for TS1+stix on input line 165.
  (C:\Users\SURFACE\AppData\Local\Programs\MiKTeX\tex/latex/stix\ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
 )
 <figs_rev1/Figure_2.png, id=156, 1156.32pt x 722.7pt>
 File: figs_rev1/Figure_2.png Graphic file (type png)
 <use figs_rev1/Figure_2.png>
-Package pdftex.def Info: figs_rev1/Figure_2.png  used on input line 178.
+Package pdftex.def Info: figs_rev1/Figure_2.png  used on input line 179.
 (pdftex.def)             Requested size: 468.3324pt x 292.70293pt.
  [5{C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix/stix-ts1.enc}]
 <figs_rev1/Figure_3.png, id=172, 1445.4pt x 1084.05pt>
 File: figs_rev1/Figure_3.png Graphic file (type png)
 <use figs_rev1/Figure_3.png>
-Package pdftex.def Info: figs_rev1/Figure_3.png  used on input line 189.
+Package pdftex.def Info: figs_rev1/Figure_3.png  used on input line 190.
 (pdftex.def)             Requested size: 468.3324pt x 351.25343pt.
  [6 <./figs_rev1/Figure_2.png>] [7 <./figs_rev1/Figure_3.png>] [8]
-<figs_rev1/Figure_4.png, id=222, 619.8357pt x 431.6928pt>
+<figs_rev1/Figure_4.png, id=224, 619.8357pt x 431.6928pt>
 File: figs_rev1/Figure_4.png Graphic file (type png)
 <use figs_rev1/Figure_4.png>
-Package pdftex.def Info: figs_rev1/Figure_4.png  used on input line 243.
+Package pdftex.def Info: figs_rev1/Figure_4.png  used on input line 244.
 (pdftex.def)             Requested size: 468.3324pt x 326.18626pt.
  [9] [10 <./figs_rev1/Figure_4.png>] [11]
-<figs_rev1/Figure_5.png, id=279, 768.27568pt x 477.14626pt>
+<figs_rev1/Figure_5.png, id=281, 768.27568pt x 477.14626pt>
 File: figs_rev1/Figure_5.png Graphic file (type png)
 <use figs_rev1/Figure_5.png>
-Package pdftex.def Info: figs_rev1/Figure_5.png  used on input line 296.
+Package pdftex.def Info: figs_rev1/Figure_5.png  used on input line 297.
 (pdftex.def)             Requested size: 468.3324pt x 290.86949pt.
  [12 <./figs_rev1/Figure_5.png>]
-<figs_rev1/Figure_6.png, id=291, 722.7pt x 361.35pt>
+<figs_rev1/Figure_6.png, id=293, 722.7pt x 361.35pt>
 File: figs_rev1/Figure_6.png Graphic file (type png)
 <use figs_rev1/Figure_6.png>
-Package pdftex.def Info: figs_rev1/Figure_6.png  used on input line 335.
+Package pdftex.def Info: figs_rev1/Figure_6.png  used on input line 336.
 (pdftex.def)             Requested size: 262.26498pt x 131.13351pt.
-<figs_rev1/Figure_7.png, id=292, 433.62pt x 289.08pt>
+<figs_rev1/Figure_7.png, id=294, 433.62pt x 289.08pt>
 File: figs_rev1/Figure_7.png Graphic file (type png)
 <use figs_rev1/Figure_7.png>
-Package pdftex.def Info: figs_rev1/Figure_7.png  used on input line 342.
+Package pdftex.def Info: figs_rev1/Figure_7.png  used on input line 343.
 (pdftex.def)             Requested size: 187.3301pt x 124.88863pt.
  [13 <./figs_rev1/Figure_6.png> <./figs_rev1/Figure_7.png>]
-<figs_rev1/Figure_8.png, id=304, 722.7pt x 433.62pt>
+<figs_rev1/Figure_8.png, id=307, 722.7pt x 433.62pt>
 File: figs_rev1/Figure_8.png Graphic file (type png)
 <use figs_rev1/Figure_8.png>
 Package pdftex.def Info: figs_rev1/Figure_8.png  used on input line 401.
 (pdftex.def)             Requested size: 374.66734pt x 224.8022pt.
  [14] [15 <./figs_rev1/Figure_8.png>]
-<figs_rev1/Figure_9.png, id=324, 1300.86pt x 1445.4pt>
+<figs_rev1/Figure_9.png, id=326, 1300.86pt x 1445.4pt>
 File: figs_rev1/Figure_9.png Graphic file (type png)
 <use figs_rev1/Figure_9.png>
 Package pdftex.def Info: figs_rev1/Figure_9.png  used on input line 454.
 (pdftex.def)             Requested size: 374.66734pt x 416.28812pt.
  [16]
-<figs_rev1/Figure_10.png, id=333, 650.43pt x 578.16pt>
+<figs_rev1/Figure_10.png, id=335, 650.43pt x 578.16pt>
 File: figs_rev1/Figure_10.png Graphic file (type png)
 <use figs_rev1/Figure_10.png>
 Package pdftex.def Info: figs_rev1/Figure_10.png  used on input line 473.
 (pdftex.def)             Requested size: 224.79755pt x 199.81828pt.
-<figs_rev1/Figure_11.png, id=334, 722.7pt x 433.62pt>
+<figs_rev1/Figure_11.png, id=336, 722.7pt x 433.62pt>
 File: figs_rev1/Figure_11.png Graphic file (type png)
 <use figs_rev1/Figure_11.png>
 Package pdftex.def Info: figs_rev1/Figure_11.png  used on input line 481.
 (pdftex.def)             Requested size: 224.79755pt x 134.87735pt.
  [17 <./figs_rev1/Figure_9.png>]
-<figs_rev1/Figure_12.png, id=343, 722.7pt x 433.62pt>
+<figs_rev1/Figure_12.png, id=345, 722.7pt x 433.62pt>
 File: figs_rev1/Figure_12.png Graphic file (type png)
 <use figs_rev1/Figure_12.png>
 Package pdftex.def Info: figs_rev1/Figure_12.png  used on input line 504.
 (pdftex.def)             Requested size: 224.79755pt x 134.87735pt.
-<figs_rev1/Figure_13.png, id=344, 867.24pt x 433.62pt>
+<figs_rev1/Figure_13.png, id=346, 867.24pt x 433.62pt>
 File: figs_rev1/Figure_13.png Graphic file (type png)
 <use figs_rev1/Figure_13.png>
 Package pdftex.def Info: figs_rev1/Figure_13.png  used on input line 512.
 (pdftex.def)             Requested size: 224.79755pt x 112.39447pt.
-<figs_rev1/Figure_14.png, id=345, 722.7pt x 433.62pt>
+<figs_rev1/Figure_14.png, id=347, 722.7pt x 433.62pt>
 File: figs_rev1/Figure_14.png Graphic file (type png)
 <use figs_rev1/Figure_14.png>
 Package pdftex.def Info: figs_rev1/Figure_14.png  used on input line 522.
 (pdftex.def)             Requested size: 281.00229pt x 168.60164pt.
  [18 <./figs_rev1/Figure_10.png> <./figs_rev1/Figure_11.png>] [19 <./figs_rev1/Figure_12.png> <./figs_rev1/Figure_13.png> <./figs_rev1/Figure_14.png>]
-<figs_rev1/Figure_15.png, id=366, 1004.553pt x 860.013pt>
+<figs_rev1/Figure_15.png, id=368, 1004.553pt x 860.013pt>
 File: figs_rev1/Figure_15.png Graphic file (type png)
 <use figs_rev1/Figure_15.png>
 Package pdftex.def Info: figs_rev1/Figure_15.png  used on input line 544.
 (pdftex.def)             Requested size: 468.3324pt x 400.95172pt.
- [20] [21 <./figs_rev1/Figure_15.png>] [22]
-Overfull \hbox (0.8095pt too wide) in paragraph at lines 588--589
+ [20 <./figs_rev1/Figure_15.png>] [21]
+Overfull \hbox (0.8095pt too wide) in paragraph at lines 577--578
 []\T1/stix/m/n/10 Finally, to sup-port long-term sus-tain-able man-age-ment, the frame-work should be ex-tended to sim-u-late fu-ture ground-
  []
 
-[23] (main_document.bbl [24] [25] [26]) [27] (main_document.aux)
+[22] [23] (main_document.bbl [24] [25] [26]) [27] (main_document.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -885,17 +885,17 @@ Package rerunfilecheck Info: File `main_document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19091 strings out of 467871
- 299812 string characters out of 5417408
- 718429 words of memory out of 5000000
+ 19090 strings out of 467871
+ 299798 string characters out of 5417408
+ 717424 words of memory out of 5000000
  47533 multiletter control sequences out of 15000+600000
  735983 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,98p,1300b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,98p,1241b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0900.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi450\ecsx0800.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\SURFACE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi375\ecss0800.pk><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/STIXGeneral-Bold.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/STIXGeneral-BoldItalic.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/STIXGeneral-Italic.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/STIXGeneral-Regular.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathbb.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathcal.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathex.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathit.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathrm.pfb><C:/Users/SURFACE/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on main_document.pdf (27 pages, 17540128 bytes).
+Output written on main_document.pdf (27 pages, 17538549 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

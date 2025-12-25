@@ -2,10 +2,9 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\orcidauthor{0009-0007-8193-5359}{Author 1}
-\creditauthor{contribution }{Author 1}
-\creditauthor{contribution }{Author 2}
-\creditauthor{contribution}{Author 3}
+\orcidauthor{0009-0007-8193-5359}{Lahcen Hicham}
+\creditauthor{contribution }{Lahcen Hicham}
+\creditauthor{contribution }{Lhoussaine ELMEZOUARY}
 \citation{scanlon_global_2023}
 \citation{taylor_ground_2013,famiglietti_global_2014}
 \citation{wada_global_2010,mukherjee_arsenic_2024}
@@ -38,6 +37,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Research Objectives and Contribution}{3}{subsection.1.5}\protected@file@percent }
 \citation{talib_spatial_2024}
 \citation{mahammad_groundwater_2023}
+\citation{sun_data-driven_2022}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methodology}{4}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Data Collection}{4}{subsection.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Location of the study area and monitoring wells, the brown dots indicates wells where the ground water level has an obvious trend, the green dots indicates wells with no trend.}}{4}{figure.caption.2}\protected@file@percent }
@@ -61,6 +61,7 @@
 \citation{chen_fast_2009}
 \citation{wu_forecasting_2025}
 \citation{wu_forecasting_2025}
+\citation{taccari_spatial-temporal_2024}
 \citation{taccari_spatial-temporal_2024,bai_graph_2023}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Graph Construction}{9}{subsection.2.3}\protected@file@percent }
 \citation{kipf_semi-supervised_2017,gilmer_neural_2017}
@@ -84,55 +85,54 @@
 \newlabel{eqn:stgcn_spatial}{{7}{11}{Spatio-Temporal Graph Convolutional Networks (STGCNs)}{equation.7}{}}
 \citation{taccari_spatial-temporal_2024}
 \citation{taccari_spatial-temporal_2024}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Architecture of the Spatio-Temporal Graph Convolutional Network (STGNN) used in this study. The model stacks multiple spatio-temporal blocks to capture spatial and temporal dependencies in groundwater data, followed by fully connected layers for forecasting future groundwater levels, consistent with recent hydrological applications \cite  {taccari_spatial-temporal_2024}.}}{12}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:myimage2}{{5}{12}{Architecture of the Spatio-Temporal Graph Convolutional Network (STGNN) used in this study. The model stacks multiple spatio-temporal blocks to capture spatial and temporal dependencies in groundwater data, followed by fully connected layers for forecasting future groundwater levels, consistent with recent hydrological applications \cite {taccari_spatial-temporal_2024}}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Architecture of the Spatio-Temporal Graph Convolutional Network (STGCN) used in this study. The model stacks multiple spatio-temporal blocks to capture spatial and temporal dependencies in groundwater data, followed by fully connected layers for forecasting future groundwater levels, consistent with recent hydrological applications \cite  {taccari_spatial-temporal_2024}.}}{12}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:myimage2}{{5}{12}{Architecture of the Spatio-Temporal Graph Convolutional Network (STGCN) used in this study. The model stacks multiple spatio-temporal blocks to capture spatial and temporal dependencies in groundwater data, followed by fully connected layers for forecasting future groundwater levels, consistent with recent hydrological applications \cite {taccari_spatial-temporal_2024}}{figure.caption.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Training and Evaluation}{12}{subsection.2.5}\protected@file@percent }
 \newlabel{eqn:mse_loss}{{8}{13}{Training Procedure}{equation.8}{}}
-\newlabel{fig:myimage3}{{\caption@xref {??}{ on input line 336}}{13}{Training Procedure}{figure.caption.11}{}}
+\newlabel{fig:myimage3}{{\caption@xref {??}{ on input line 337}}{13}{Training Procedure}{figure.caption.11}{}}
 \newlabel{sub@fig:myimage3}{{}{13}{Training Procedure}{figure.caption.11}{}}
-\newlabel{fig:myimage4}{{\caption@xref {??}{ on input line 343}}{13}{Training Procedure}{figure.caption.11}{}}
+\newlabel{fig:myimage4}{{\caption@xref {??}{ on input line 344}}{13}{Training Procedure}{figure.caption.11}{}}
 \newlabel{sub@fig:myimage4}{{}{13}{Training Procedure}{figure.caption.11}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Overview of model performance. (a) Training and validation loss across epochs, showing gradual convergence and indicating effective generalization without overfitting. (b) Evaluation metrics on the test set, illustrating the model's accuracy in capturing groundwater level dynamics and its sensitivity to extreme variations.}}{13}{figure.caption.11}\protected@file@percent }
 \newlabel{fig:model_performance}{{6}{13}{Overview of model performance. (a) Training and validation loss across epochs, showing gradual convergence and indicating effective generalization without overfitting. (b) Evaluation metrics on the test set, illustrating the model's accuracy in capturing groundwater level dynamics and its sensitivity to extreme variations}{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Evaluation Metrics}{13}{subsubsection.2.5.1}\protected@file@percent }
 \newlabel{eqn:mae}{{9}{13}{Evaluation Metrics}{equation.9}{}}
-\newlabel{eqn:rmse}{{10}{14}{Evaluation Metrics}{equation.10}{}}
+\newlabel{eqn:rmse}{{10}{13}{Evaluation Metrics}{equation.10}{}}
 \newlabel{eqn:r2}{{11}{14}{Evaluation Metrics}{equation.11}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Baseline Models}{14}{subsection.2.6}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of model performance in groundwater level prediction. Metrics include mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination ($R^2$). The STGCN generally outperforms LSTM and GRU models, particularly for wells with irregular temporal patterns, highlighting its ability to capture complex spatio-temporal dependencies.}}{14}{table.caption.12}\protected@file@percent }
-\newlabel{tab:model_performance}{{1}{14}{Comparison of model performance in groundwater level prediction. Metrics include mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination ($R^2$). The STGCN generally outperforms LSTM and GRU models, particularly for wells with irregular temporal patterns, highlighting its ability to capture complex spatio-temporal dependencies}{table.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of model performance in groundwater level prediction. Metrics include mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination ($R^2$). The STGNN generally outperforms LSTM and GRU models, particularly for wells with irregular temporal patterns, highlighting its ability to capture complex spatio-temporal dependencies.}}{14}{table.caption.12}\protected@file@percent }
+\newlabel{tab:model_performance}{{1}{14}{Comparison of model performance in groundwater level prediction. Metrics include mean absolute error (MAE), root mean squared error (RMSE), and coefficient of determination ($R^2$). The STGNN generally outperforms LSTM and GRU models, particularly for wells with irregular temporal patterns, highlighting its ability to capture complex spatio-temporal dependencies}{table.caption.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Metrics comparison of the two baseline models (LSTM and GRU) with the STGNN model.}}{15}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:metrics_comparison}{{7}{15}{Metrics comparison of the two baseline models (LSTM and GRU) with the STGNN model}{figure.caption.13}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Per-well performance comparison for STGNN, LSTM, and GRU models. Best values per metric (MAE, RMSE, R²) are highlighted in bold.}}{16}{table.caption.14}\protected@file@percent }
 \newlabel{tab:well_performance}{{2}{16}{Per-well performance comparison for STGNN, LSTM, and GRU models. Best values per metric (MAE, RMSE, R²) are highlighted in bold}{table.caption.14}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results and Discussion}{16}{section.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of observed and predicted groundwater levels for the training and testing periods. The close alignment illustrates the STGCN's ability to accurately capture both long-term trends and short-term fluctuations in groundwater dynamics.}}{17}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:time_series}{{8}{17}{Comparison of observed and predicted groundwater levels for the training and testing periods. The close alignment illustrates the STGCN's ability to accurately capture both long-term trends and short-term fluctuations in groundwater dynamics}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of observed and predicted groundwater levels for the training and testing periods. The close alignment illustrates the STGNN's ability to accurately capture both long-term trends and short-term fluctuations in groundwater dynamics.}}{17}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:time_series}{{8}{17}{Comparison of observed and predicted groundwater levels for the training and testing periods. The close alignment illustrates the STGNN's ability to accurately capture both long-term trends and short-term fluctuations in groundwater dynamics}{figure.caption.15}{}}
 \newlabel{fig:obs_vs_pred}{{9a}{18}{Observed vs predicted groundwater levels}{figure.caption.16}{}}
 \newlabel{sub@fig:obs_vs_pred}{{a}{18}{Observed vs predicted groundwater levels}{figure.caption.16}{}}
 \newlabel{fig:residuals_dist}{{9b}{18}{STGNN: Distribution of Residuals}{figure.caption.16}{}}
 \newlabel{sub@fig:residuals_dist}{{b}{18}{STGNN: Distribution of Residuals}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Evaluation of STGCN prediction performance. (a) Scatter plot of observed versus predicted groundwater levels, demonstrating strong agreement and model generalization to unseen conditions. (b) Distribution of residuals across all wells, highlighting the model’s error characteristics and overall prediction reliability.}}{18}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:scatter_hist}{{9}{18}{Evaluation of STGCN prediction performance. (a) Scatter plot of observed versus predicted groundwater levels, demonstrating strong agreement and model generalization to unseen conditions. (b) Distribution of residuals across all wells, highlighting the model’s error characteristics and overall prediction reliability}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Evaluation of STGNN prediction performance. (a) Scatter plot of observed versus predicted groundwater levels, demonstrating strong agreement and model generalization to unseen conditions. (b) Distribution of residuals across all wells, highlighting the model’s error characteristics and overall prediction reliability.}}{18}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:scatter_hist}{{9}{18}{Evaluation of STGNN prediction performance. (a) Scatter plot of observed versus predicted groundwater levels, demonstrating strong agreement and model generalization to unseen conditions. (b) Distribution of residuals across all wells, highlighting the model’s error characteristics and overall prediction reliability}{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Model Performance and Interpretation}{18}{subsection.3.1}\protected@file@percent }
 \newlabel{fig:feat_imp}{{10a}{19}{Global feature importance}{figure.caption.17}{}}
 \newlabel{sub@fig:feat_imp}{{a}{19}{Global feature importance}{figure.caption.17}{}}
 \newlabel{fig:conf_int}{{10b}{19}{Model confidence interval (Well 766/53)}{figure.caption.17}{}}
 \newlabel{sub@fig:conf_int}{{b}{19}{Model confidence interval (Well 766/53)}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Model interpretability and reliability. (a) Global feature importance across all wells, showing which inputs most strongly influence STGCN predictions. (b) Prediction confidence intervals for well 766/53, illustrating the model’s uncertainty and robustness during periods of high groundwater variability.}}{19}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:feature_importance}{{10}{19}{Model interpretability and reliability. (a) Global feature importance across all wells, showing which inputs most strongly influence STGCN predictions. (b) Prediction confidence intervals for well 766/53, illustrating the model’s uncertainty and robustness during periods of high groundwater variability}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Relationship between predicted uncertainty and actual prediction error. The scatter plot shows that higher modeled uncertainty (standard deviation of predictions) corresponds to larger absolute errors, indicating that the STGCN’s uncertainty estimates are well-calibrated and can serve as a reliable proxy for risk in groundwater management decisions.}}{19}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:uncertainty_scatter}{{11}{19}{Relationship between predicted uncertainty and actual prediction error. The scatter plot shows that higher modeled uncertainty (standard deviation of predictions) corresponds to larger absolute errors, indicating that the STGCN’s uncertainty estimates are well-calibrated and can serve as a reliable proxy for risk in groundwater management decisions}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Model interpretability and reliability. (a) Global feature importance across all wells, showing which inputs most strongly influence STGNN predictions. (b) Prediction confidence intervals for well 766/53, illustrating the model’s uncertainty and robustness during periods of high groundwater variability.}}{19}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:feature_importance}{{10}{19}{Model interpretability and reliability. (a) Global feature importance across all wells, showing which inputs most strongly influence STGNN predictions. (b) Prediction confidence intervals for well 766/53, illustrating the model’s uncertainty and robustness during periods of high groundwater variability}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Relationship between predicted uncertainty and actual prediction error. The scatter plot shows that higher modeled uncertainty (standard deviation of predictions) corresponds to larger absolute errors, indicating that the STGNN’s uncertainty estimates are well-calibrated and can serve as a reliable proxy for risk in groundwater management decisions.}}{19}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:uncertainty_scatter}{{11}{19}{Relationship between predicted uncertainty and actual prediction error. The scatter plot shows that higher modeled uncertainty (standard deviation of predictions) corresponds to larger absolute errors, indicating that the STGNN’s uncertainty estimates are well-calibrated and can serve as a reliable proxy for risk in groundwater management decisions}{figure.caption.18}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Effect of Spatial Relationships}{20}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Temporal Dynamics and Seasonal Variability}{20}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Interpretability and Practical Insights}{20}{subsection.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Spatial diagnostics of STGCN performance across the monitoring network. Node color represents prediction accuracy, while node size indicates model confidence. This visualization highlights wells where anthropogenic activities or local hydrogeological heterogeneity lead to deviations from the distance-based graph assumptions, providing insights for targeted model refinement and monitoring prioritization.}}{21}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:spatial_map}{{12}{21}{Spatial diagnostics of STGCN performance across the monitoring network. Node color represents prediction accuracy, while node size indicates model confidence. This visualization highlights wells where anthropogenic activities or local hydrogeological heterogeneity lead to deviations from the distance-based graph assumptions, providing insights for targeted model refinement and monitoring prioritization}{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{22}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Spatial diagnostics of STGCN performance across the monitoring network. Node color represents prediction accuracy, while node size indicates model confidence. This visualization highlights wells where anthropogenic activities or local hydrogeological heterogeneity lead to deviations from the distance-based graph assumptions, providing insights for targeted model refinement and monitoring prioritization.}}{20}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:spatial_map}{{12}{20}{Spatial diagnostics of STGCN performance across the monitoring network. Node color represents prediction accuracy, while node size indicates model confidence. This visualization highlights wells where anthropogenic activities or local hydrogeological heterogeneity lead to deviations from the distance-based graph assumptions, providing insights for targeted model refinement and monitoring prioritization}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Temporal Dynamics and Seasonal Variability}{21}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{21}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Future Work}{22}{section.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Integration of Physics-Informed Neural Networks (PINNs)}{22}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dynamic and Functional Graph Construction}{23}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Climate Change and Scenario Analysis}{23}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Dynamic and Functional Graph Construction}{22}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Climate Change and Scenario Analysis}{22}{subsection.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {6}Acknowledgments}{23}{section.6}\protected@file@percent }
 \bibstyle{cas-model2-names}
 \bibdata{bibliography}
